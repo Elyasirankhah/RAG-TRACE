@@ -17,9 +17,8 @@ Tracing measurement evidence and diagnostic completeness in AI-generated ECG rep
 
 A language model drafts an electrocardiogram note, sometimes after reading retrieved criterion cards. A deterministic rule then withdraws an applied criterion when the card has no numeric check or the Marquette 12SL predicate is false. Diagnoses are not rewritten. Uni-G is scored afterward as a second measurement program. This repository measures whether a retrieved criterion can be checked. It does not estimate clinical safety.
 
-**Elyas Irankhah** · Postdoctoral Associate, Yale University · [Google Scholar](https://scholar.google.com/citations?user=Erg664sAAAAJ&hl=en) · [elyas.irankhah@yale.edu](mailto:elyas.irankhah@yale.edu)
 
-## Study
+## Project
 
 The held-out sample is one test-fold electrocardiogram per patient from PTB-XL 1.0.3 (seed 11): 1,083 human-validated patients. Measurements come from PTB-XL+ 1.0.1. The criteria library has 47 cards. Fourteen have a numeric check. Thirty-three do not. Retrieval uses asserted superclass words from a calibrator fit on folds 1–8 and calibrated on fold 9. Stored test labels are not in the query. Keyword overlap, TF–IDF, and Okapi BM25 each return three cards. BM25 is a ranking comparison on the saved queries. It does not write a new note.
 
