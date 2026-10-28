@@ -7,7 +7,7 @@ from retrieval_harm import MEASUREMENT_COLUMNS, facts_for, load_cases
 from revision_evals import library
 from score_qwen import claims_of
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 REPORT = os.path.join(OUT, "retention.json")
 

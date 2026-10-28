@@ -12,7 +12,7 @@ from revision_evals import evaluate
 from revision_evals import library as full_library
 from score_qwen import claims_of, score_file
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "results", "ptbxl_baseline", "open_models", "google__medgemma-4b-it.jsonl")
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline", "medgemma_results.json")
 INDEPENDENT = os.path.join(ROOT, "results", "ptbxl_baseline", "medgemma_independent.json")

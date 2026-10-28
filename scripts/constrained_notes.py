@@ -14,7 +14,7 @@ from heldout_notes import keyword_retrieve, library, load_jsonl, note_prompt
 from retrieval_harm import claim_list, facts_for, load_cases, load_env, log, parse_json_content
 from revision_evals import evaluate
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 RAW = os.path.join(OUT, "constrained_generations.jsonl")
 FAILS = os.path.join(OUT, "constrained_failures.jsonl")

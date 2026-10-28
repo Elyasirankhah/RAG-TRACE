@@ -5,7 +5,7 @@ from retrieval_harm import load_cases
 from revision_evals import evaluate, library
 from score_qwen import claims_of
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "results", "ptbxl_baseline", "open_models", "Qwen__Qwen3-8B.jsonl")
 REPORT = os.path.join(ROOT, "results", "ptbxl_baseline", "qwen_independent.json")
 

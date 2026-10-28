@@ -43,7 +43,7 @@ The waveforms are not in this repository. They are the public PhysioNet releases
 - [PTB-XL 1.0.3](https://physionet.org/content/ptb-xl/1.0.3/)
 - [PTB-XL+ 1.0.1](https://physionet.org/content/ptb-xl-plus/1.0.1/)
 
-`download_ptbxl.py` fetches both from the public bucket `physionet-open`. Their licenses stay with PhysioNet.
+`scripts/download_ptbxl.py` fetches both from the public bucket `physionet-open`. Their licenses stay with PhysioNet.
 
 ## Reproduce
 
@@ -51,30 +51,30 @@ The waveforms are not in this repository. They are the public PhysioNet releases
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python diagnosis_prf.py
-python matched_intervals.py
-python micro_f1_forest.py
-python offline_day.py
-python retention_paired.py
+python scripts/scripts/diagnosis_prf.py
+python scripts/scripts/matched_intervals.py
+python scripts/scripts/micro_f1_forest.py
+python scripts/scripts/offline_day.py
+python scripts/scripts/retention_paired.py
 ```
 
-`diagnosis_prf.py` reads `results/ptbxl_baseline/case_record.csv` and the 12SL feature table from PTB-XL+. Run `python download_ptbxl.py` once before the first score. Keep NumPy at 1.24.3.
+`scripts/diagnosis_prf.py` reads `results/ptbxl_baseline/case_record.csv` and the 12SL feature table from PTB-XL+. Run `python scripts/scripts/download_ptbxl.py` once before the first score. Keep NumPy at 1.24.3.
 
 ## Scripts
 
 | Script | Role |
 |---|---|
-| `diagnosis_prf.py` | Precision, recall, F1, omissions, and false-diagnosis notes |
-| `matched_intervals.py` | Paired intervals for the different-schema comparison |
-| `micro_f1_forest.py` | Micro-F1 change and bootstrap interval for each model |
-| `offline_day.py` | Keyword, TF–IDF, and BM25 on the saved queries |
-| `retention_paired.py` | Untestable cards, failed 12SL checks, and retained cards |
-| `hyp_read.py` | Hypertrophy counts on the two schema comparisons |
-| `score_qwen_independent.py` | Uni-G and statement scores for Qwen3-8B |
-| `score_glm_independent.py` | Uni-G and statement scores for GLM-5.3-Flash |
-| `claim_scoring.py` | Prespecified affirmation list and the 12SL withdrawal |
-| `diagnosis_rule.py` | Label-aware diagnosis count |
-| `ecg_guard.py` | Frozen fold-9 margins and the three-state check |
+| `scripts/diagnosis_prf.py` | Precision, recall, F1, omissions, and false-diagnosis notes |
+| `scripts/matched_intervals.py` | Paired intervals for the different-schema comparison |
+| `scripts/micro_f1_forest.py` | Micro-F1 change and bootstrap interval for each model |
+| `scripts/offline_day.py` | Keyword, TF–IDF, and BM25 on the saved queries |
+| `scripts/retention_paired.py` | Untestable cards, failed 12SL checks, and retained cards |
+| `scripts/hyp_read.py` | Hypertrophy counts on the two schema comparisons |
+| `scripts/score_qwen_independent.py` | Uni-G and statement scores for Qwen3-8B |
+| `scripts/score_glm_independent.py` | Uni-G and statement scores for GLM-5.3-Flash |
+| `scripts/claim_scoring.py` | Prespecified affirmation list and the 12SL withdrawal |
+| `scripts/diagnosis_rule.py` | Label-aware diagnosis count |
+| `scripts/ecg_guard.py` | Frozen fold-9 margins and the three-state check |
 | `knowledge/ecg_criteria_v2.json` | 47-card library. SHA-256 `dc289fe2434bc799cbf4346272468970f2d47a3e2aceebca3f792bc61eddbf6c` |
 
 ## License

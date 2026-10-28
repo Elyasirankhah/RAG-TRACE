@@ -5,7 +5,7 @@ from retrieval_harm import load_cases
 from revision_evals import evaluate, library
 from claim_scoring import filter_note
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "results", "ptbxl_baseline", "glm", "heldout_generations.jsonl")
 REPORT = os.path.join(ROOT, "results", "ptbxl_baseline", "glm", "heldout_independent.json")
 

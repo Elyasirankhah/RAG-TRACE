@@ -6,7 +6,7 @@ from exploratory_revision import as_claims
 from retrieval_harm import facts_for, load_cases
 from revision_evals import load_jsonl
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 LOST = [4458, 6180, 6625, 7670, 7916, 8524, 8880, 9024, 10388, 10837, 17690]
 

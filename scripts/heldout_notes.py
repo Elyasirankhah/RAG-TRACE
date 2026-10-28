@@ -27,7 +27,7 @@ from retrieval_harm import (
     tokens,
 )
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 LIBRARY_PATH = os.path.join(ROOT, "knowledge", "ecg_criteria_v2.json")
 SAMPLE = os.path.join(OUT, "heldout_sample.csv")

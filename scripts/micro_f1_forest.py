@@ -8,7 +8,7 @@ from exploratory_revision import as_claims
 from retrieval_harm import load_cases
 from revision_evals import load_jsonl
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 REPORT = os.path.join(OUT, "micro_f1_forest.json")
 CLASSES = ("NORM", "MI", "STTC", "CD", "HYP")

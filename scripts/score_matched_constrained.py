@@ -8,7 +8,7 @@ from heldout_notes import library, load_jsonl
 from retrieval_harm import load_cases
 from revision_evals import evaluate
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 RAW = os.path.join(OUT, "matched_constrained_generations.jsonl")
 REPORT = os.path.join(OUT, "matched_constrained_results.json")

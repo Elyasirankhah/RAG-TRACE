@@ -7,7 +7,7 @@ from scipy.stats import binomtest
 
 from retrieval_harm import Q_COLUMNS, cards
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 REPORT = os.path.join(OUT, "independent_measurements.json")
 FEATURES = os.path.join(ROOT, "ptb-xl-plus", "features")

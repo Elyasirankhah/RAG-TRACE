@@ -10,7 +10,7 @@ from claim_scoring import affirms, filter_note, score_note
 from independent_measurements import measurements_for
 from retrieval_harm import MEASUREMENT_COLUMNS, cards, facts_for, load_cases
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 REPORT = os.path.join(OUT, "corrected_policy.json")
 

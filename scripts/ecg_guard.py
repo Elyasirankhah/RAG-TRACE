@@ -8,7 +8,7 @@ import pandas as pd
 from independent_measurements import holds
 from retrieval_harm import MEASUREMENT_COLUMNS, Q_COLUMNS, retrieve
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ecg_guard")
 LIBRARY = os.path.join(ROOT, "knowledge", "ecg_criteria_v2.json")
 FEATURES = os.path.join(ROOT, "ptb-xl-plus", "features")

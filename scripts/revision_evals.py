@@ -10,7 +10,7 @@ from independent_measurements import holds, measurements_for
 from rescore_corrected import bootstrap
 from retrieval_harm import MEASUREMENT_COLUMNS, facts_for, load_cases, predicate
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 LIBRARY_PATH = os.path.join(ROOT, "knowledge", "ecg_criteria_v2.json")
 REPORT = os.path.join(OUT, "independent_factuality.json")

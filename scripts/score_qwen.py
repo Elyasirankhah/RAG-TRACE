@@ -11,7 +11,7 @@ from independent_measurements import measurements_for
 from rescore_corrected import bootstrap
 from retrieval_harm import MEASUREMENT_COLUMNS, facts_for, load_cases, parse_json_content
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 OPEN = os.path.join(OUT, "open_models")
 MODELS = [

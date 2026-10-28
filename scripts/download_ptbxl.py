@@ -10,7 +10,7 @@ from botocore.config import Config
 os.environ["AWS_EC2_METADATA_DISABLED"] = "true"
 
 BUCKET = "physionet-open"
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG = os.path.join(ROOT, "download_ptbxl.log")
 DATASETS = (
     ("ptb-xl/1.0.3/", os.path.join(ROOT, "ptb-xl")),

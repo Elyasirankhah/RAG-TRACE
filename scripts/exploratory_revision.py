@@ -12,7 +12,7 @@ from retrieval_harm import facts_for, load_cases
 from revision_evals import load_jsonl, scp_table, unig_table
 from score_qwen import claims_of
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "ptbxl_baseline")
 REPORT = os.path.join(OUT, "exploratory_revision.json")
 MARGINS = json.load(open(os.path.join(ROOT, "results", "ecg_guard", "development_report.json"), encoding="utf-8"))
