@@ -1,0 +1,226 @@
+{
+  "no_api": true,
+  "full_library": {
+    "n": 1083,
+    "library_cards": 47,
+    "checked_cards": 14,
+    "keyword": {
+      "patients_with_an_untestable_card": 0.814404432132964,
+      "sokolow_when_hypertrophy_asserted": 0.5517241379310345,
+      "sokolow_when_hypertrophy_stored": 0.3364485981308411,
+      "n_hypertrophy_asserted": 87,
+      "n_hypertrophy_stored": 107
+    },
+    "tfidf": {
+      "patients_with_an_untestable_card": 0.7359187442289935,
+      "sokolow_when_hypertrophy_asserted": 0.27586206896551724,
+      "sokolow_when_hypertrophy_stored": 0.1588785046728972,
+      "n_hypertrophy_asserted": 87,
+      "n_hypertrophy_stored": 107
+    },
+    "bm25": {
+      "patients_with_an_untestable_card": 0.7977839335180056,
+      "sokolow_when_hypertrophy_asserted": 0.0,
+      "sokolow_when_hypertrophy_stored": 0.0,
+      "n_hypertrophy_asserted": 87,
+      "n_hypertrophy_stored": 107
+    }
+  },
+  "numeric_cards": {
+    "n": 1083,
+    "library_cards": 14,
+    "checked_cards": 14,
+    "keyword": {
+      "patients_with_an_untestable_card": 0.0,
+      "sokolow_when_hypertrophy_asserted": 1.0,
+      "sokolow_when_hypertrophy_stored": 0.616822429906542,
+      "n_hypertrophy_asserted": 87,
+      "n_hypertrophy_stored": 107
+    },
+    "tfidf": {
+      "patients_with_an_untestable_card": 0.0,
+      "sokolow_when_hypertrophy_asserted": 0.5517241379310345,
+      "sokolow_when_hypertrophy_stored": 0.34579439252336447,
+      "n_hypertrophy_asserted": 87,
+      "n_hypertrophy_stored": 107
+    },
+    "bm25": {
+      "patients_with_an_untestable_card": 0.0,
+      "sokolow_when_hypertrophy_asserted": 0.5057471264367817,
+      "sokolow_when_hypertrophy_stored": 0.32710280373831774,
+      "n_hypertrophy_asserted": 87,
+      "n_hypertrophy_stored": 107
+    }
+  },
+  "hypertrophy": {
+    "stored_hypertrophy": 107,
+    "kept_by_both": 55,
+    "lost_under_constraint": 11,
+    "gained_under_constraint": 0,
+    "missed_by_both": 41,
+    "by_probability": {
+      "p_at_least_0.5": {
+        "n": 65,
+        "no": 65,
+        "key": 54,
+        "recall_no_cards": 1.0,
+        "recall_keyword": 0.8307692307692308
+      },
+      "p_below_0.5": {
+        "n": 42,
+        "no": 1,
+        "key": 1,
+        "recall_no_cards": 0.023809523809523808,
+        "recall_keyword": 0.023809523809523808
+      }
+    },
+    "lost": [
+      {
+        "ecg_id": 4458,
+        "p_hyp": 0.636,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": []
+      },
+      {
+        "ecg_id": 6180,
+        "p_hyp": 0.588,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": [
+          "NORM"
+        ]
+      },
+      {
+        "ecg_id": 6625,
+        "p_hyp": 0.812,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": []
+      },
+      {
+        "ecg_id": 7670,
+        "p_hyp": 0.636,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": []
+      },
+      {
+        "ecg_id": 7916,
+        "p_hyp": 0.636,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "long_qtc",
+          "sokolow_lyon",
+          "st_depression"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": [
+          "STTC"
+        ]
+      },
+      {
+        "ecg_id": 8524,
+        "p_hyp": 0.636,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": []
+      },
+      {
+        "ecg_id": 8880,
+        "p_hyp": 0.588,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": []
+      },
+      {
+        "ecg_id": 9024,
+        "p_hyp": 0.947,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": []
+      },
+      {
+        "ecg_id": 10388,
+        "p_hyp": 0.588,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "sokolow_lyon",
+          "voltage_below_sokolow"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": [
+          "NORM"
+        ]
+      },
+      {
+        "ecg_id": 10837,
+        "p_hyp": 0.812,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "long_qtc",
+          "sokolow_lyon",
+          "st_depression"
+        ],
+        "keyword_mentions_hypertrophy": true,
+        "keyword_labels": [
+          "STTC"
+        ]
+      },
+      {
+        "ecg_id": 17690,
+        "p_hyp": 0.588,
+        "asserted": true,
+        "retrieved_sokolow": true,
+        "retrieved": [
+          "long_qtc",
+          "narrow_qrs",
+          "sokolow_lyon"
+        ],
+        "keyword_mentions_hypertrophy": false,
+        "keyword_labels": [
+          "CD",
+          "STTC"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "wide_qrs",
+    "labels": ["CD"],
+    "keywords": ["qrs", "conduction", "bundle", "duration"],
+    "text": "A QRS duration of at least 120 ms supports a ventricular conduction disturbance.",
+    "check": "qrs_ge_120"
+  },
+  {
+    "id": "prolonged_pr",
+    "labels": ["CD"],
+    "keywords": ["pr", "interval", "av", "conduction"],
+    "text": "A PR interval of at least 200 ms supports delayed atrioventricular conduction.",
+    "check": "pr_ge_200"
+  },
+  {
+    "id": "left_axis",
+    "labels": ["CD", "HYP"],
+    "keywords": ["axis", "left", "deviation"],
+    "text": "A frontal QRS axis at or below -30 degrees supports left axis deviation.",
+    "check": "axis_le_m30"
+  },
+  {
+    "id": "sokolow_lyon",
+    "labels": ["HYP"],
+    "keywords": ["hypertrophy", "voltage", "sokolow", "v1", "v5"],
+    "text": "Sokolow-Lyon voltage, the absolute S-wave amplitude in V1 plus the larger R-wave amplitude in V5 or V6, of at least 3.5 mV supports left ventricular hypertrophy.",
+    "check": "sokolow_ge_3_5"
+  },
+  {
+    "id": "long_qtc",
+    "labels": ["STTC"],
+    "keywords": ["qt", "repolarization", "bazett", "st"],
+    "text": "A Bazett-corrected QT of at least 450 ms in men or 460 ms in women supports delayed ventricular repolarization.",
+    "check": "qtc_long"
+  },
+  {
+    "id": "st_depression",
+    "labels": ["STTC"],
+    "keywords": ["st", "depression", "repolarization"],
+    "text": "An ST amplitude of -0.1 mV or lower in lead II supports ST-segment depression.",
+    "check": "st_ii_le_m0_1"
+  },
+  {
+    "id": "pathologic_q",
+    "labels": ["MI"],
+    "keywords": ["q", "wave", "infarct", "myocardial"],
+    "text": "A Q wave lasting at least 40 ms in lead II, III, aVF, or V1 through V4 supports a prior infarct pattern.",
+    "check": "q_ge_40"
+  },
+  {
+    "id": "tachycardia",
+    "labels": [],
+    "keywords": ["rate", "tachycardia", "heart", "bpm"],
+    "text": "A ventricular rate of at least 100 beats per minute is a tachycardia-range rate. Rate alone does not establish a diagnostic superclass.",
+    "check": "hr_ge_100"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "n": 1083,
+  "bootstrap": "10,000 patient resamples, seed 2. Difference is constrained minus no cards.",
+  "hypertrophy_support": 107,
+  "micro_f1": {
+    "no_cards": 0.8039969254419678,
+    "constrained": 0.795171339563863,
+    "difference": -0.00882558587810478,
+    "ci95": [
+      -0.014001731370952068,
+      -0.004038224496452608
+    ]
+  },
+  "hypertrophy_recall": {
+    "no_cards": 0.616822429906542,
+    "constrained": 0.514018691588785,
+    "difference": -0.10280373831775702,
+    "ci95": [
+      -0.15887850467289721,
+      -0.04672897196261683
+    ]
+  }
+}

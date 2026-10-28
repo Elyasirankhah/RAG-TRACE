@@ -1,0 +1,331 @@
+[
+  {
+    "id": "wide_qrs",
+    "labels": ["CD"],
+    "keywords": ["qrs", "conduction", "bundle", "duration"],
+    "text": "A QRS duration of at least 120 ms supports a ventricular conduction disturbance.",
+    "check": "qrs_ge_120"
+  },
+  {
+    "id": "prolonged_pr",
+    "labels": ["CD"],
+    "keywords": ["pr", "interval", "av", "conduction"],
+    "text": "A PR interval of at least 200 ms supports delayed atrioventricular conduction.",
+    "check": "pr_ge_200"
+  },
+  {
+    "id": "left_axis",
+    "labels": ["CD", "HYP"],
+    "keywords": ["axis", "left", "deviation"],
+    "text": "A frontal QRS axis at or below -30 degrees supports left axis deviation.",
+    "check": "axis_le_m30"
+  },
+  {
+    "id": "sokolow_lyon",
+    "labels": ["HYP"],
+    "keywords": ["hypertrophy", "voltage", "sokolow", "v1", "v5"],
+    "text": "Sokolow-Lyon voltage, the absolute S-wave amplitude in V1 plus the larger R-wave amplitude in V5 or V6, of at least 3.5 mV supports left ventricular hypertrophy.",
+    "check": "sokolow_ge_3_5"
+  },
+  {
+    "id": "long_qtc",
+    "labels": ["STTC"],
+    "keywords": ["qt", "repolarization", "bazett", "st"],
+    "text": "A Bazett-corrected QT of at least 450 ms in men or 460 ms in women supports delayed ventricular repolarization.",
+    "check": "qtc_long"
+  },
+  {
+    "id": "st_depression",
+    "labels": ["STTC"],
+    "keywords": ["st", "depression", "repolarization"],
+    "text": "An ST amplitude of -0.1 mV or lower in lead II supports ST-segment depression.",
+    "check": "st_ii_le_m0_1"
+  },
+  {
+    "id": "pathologic_q",
+    "labels": ["MI"],
+    "keywords": ["q", "wave", "infarct", "myocardial"],
+    "text": "A Q wave lasting at least 40 ms in lead II, III, aVF, or V1 through V4 supports a prior infarct pattern.",
+    "check": "q_ge_40"
+  },
+  {
+    "id": "tachycardia",
+    "labels": ["NORM", "MI", "STTC", "CD", "HYP"],
+    "keywords": ["rate", "tachycardia", "heart", "bpm"],
+    "text": "A ventricular rate of at least 100 beats per minute is a tachycardia-range rate. Rate alone does not establish a diagnostic superclass.",
+    "check": "hr_ge_100"
+  },
+  {
+    "id": "narrow_qrs",
+    "labels": ["CD"],
+    "keywords": ["qrs", "conduction", "bundle", "narrow"],
+    "text": "A QRS duration under 110 ms supports a narrow QRS and argues against a complete bundle-branch block.",
+    "check": "qrs_lt_110"
+  },
+  {
+    "id": "short_pr",
+    "labels": ["CD"],
+    "keywords": ["pr", "interval", "av", "short"],
+    "text": "A PR interval under 120 ms is a short PR. It is not evidence of delayed atrioventricular conduction.",
+    "check": "pr_lt_120"
+  },
+  {
+    "id": "right_axis",
+    "labels": ["CD", "HYP"],
+    "keywords": ["axis", "right", "deviation"],
+    "text": "A frontal QRS axis of at least 90 degrees supports right axis deviation.",
+    "check": "axis_ge_90"
+  },
+  {
+    "id": "voltage_below_sokolow",
+    "labels": ["HYP"],
+    "keywords": ["hypertrophy", "voltage", "sokolow"],
+    "text": "Sokolow-Lyon voltage below 3.5 mV does not meet the voltage threshold used here for left ventricular hypertrophy.",
+    "check": "sokolow_lt_35"
+  },
+  {
+    "id": "bradycardia",
+    "labels": ["NORM", "MI", "STTC", "CD", "HYP"],
+    "keywords": ["rate", "bradycardia", "heart", "bpm"],
+    "text": "A ventricular rate under 60 beats per minute is a bradycardia-range rate. Rate alone does not establish a diagnostic superclass.",
+    "check": "hr_lt_60"
+  },
+  {
+    "id": "st_elevation_ii",
+    "labels": ["STTC", "MI"],
+    "keywords": ["st", "elevation", "repolarization"],
+    "text": "An ST amplitude of at least 0.1 mV in lead II supports ST-segment elevation in that lead.",
+    "check": "st_ii_ge_01"
+  },
+  {
+    "id": "calibration_pulse",
+    "labels": ["NORM", "MI", "STTC", "CD", "HYP"],
+    "keywords": ["calibration", "device", "gain"],
+    "text": "A 1 mV calibration pulse checks the recorder gain. It is not a finding about this patient.",
+    "check": null
+  },
+  {
+    "id": "paper_speed",
+    "labels": ["NORM"],
+    "keywords": ["paper", "speed", "display"],
+    "text": "A paper speed of 25 mm/s is a display choice and does not support a diagnosis.",
+    "check": null
+  },
+  {
+    "id": "notch_filter",
+    "labels": ["CD", "NORM"],
+    "keywords": ["filter", "notch", "acquisition", "conduction"],
+    "text": "A 50 Hz or 60 Hz notch filter is an acquisition setting, not a conduction abnormality.",
+    "check": null
+  },
+  {
+    "id": "pediatric_qrs",
+    "labels": ["CD"],
+    "keywords": ["qrs", "infant", "bundle", "conduction"],
+    "text": "QRS duration cutoffs used for infants do not apply as adult bundle-branch criteria.",
+    "check": null
+  },
+  {
+    "id": "lead_reversal_story",
+    "labels": ["CD"],
+    "keywords": ["axis", "lead", "reversal"],
+    "text": "A story about swapped limb leads is not a measurement of the frontal QRS axis.",
+    "check": null
+  },
+  {
+    "id": "age_infarct_prior",
+    "labels": ["MI"],
+    "keywords": ["age", "infarct", "myocardial"],
+    "text": "Older age raises the chance of prior infarction, but age is not a Q-wave measurement.",
+    "check": null
+  },
+  {
+    "id": "troponin",
+    "labels": ["MI"],
+    "keywords": ["troponin", "blood", "infarct", "myocardial"],
+    "text": "A blood troponin result is not contained in this ECG and cannot be read from the tracing.",
+    "check": null
+  },
+  {
+    "id": "echo_wall",
+    "labels": ["HYP"],
+    "keywords": ["echo", "wall", "hypertrophy", "thickness"],
+    "text": "Wall thickness on an echocardiogram is not an ECG voltage measurement.",
+    "check": null
+  },
+  {
+    "id": "serum_potassium",
+    "labels": ["STTC"],
+    "keywords": ["potassium", "st", "repolarization"],
+    "text": "A serum potassium value is not an ST-segment measurement.",
+    "check": null
+  },
+  {
+    "id": "digoxin_history",
+    "labels": ["STTC"],
+    "keywords": ["digoxin", "medication", "st"],
+    "text": "Digoxin can be associated with ST change, but medication history is not in this ECG.",
+    "check": null
+  },
+  {
+    "id": "hyperventilation",
+    "labels": ["STTC"],
+    "keywords": ["hyperventilation", "st", "repolarization"],
+    "text": "Hyperventilation can change ST segments. A respiratory story is not an ST measurement.",
+    "check": null
+  },
+  {
+    "id": "swapped_sex_qt",
+    "labels": ["STTC"],
+    "keywords": ["qt", "sex", "repolarization"],
+    "text": "Using the male QT cutoff for a woman, or the reverse, is not the sex-specific rule.",
+    "check": null
+  },
+  {
+    "id": "q_without_duration",
+    "labels": ["MI"],
+    "keywords": ["q", "wave", "infarct"],
+    "text": "Seeing a Q wave without measuring its duration is not the 40 ms Q-wave rule.",
+    "check": null
+  },
+  {
+    "id": "early_repolarization_name",
+    "labels": ["STTC"],
+    "keywords": ["early", "repolarization", "st"],
+    "text": "Naming early repolarization does not establish an ST measurement.",
+    "check": null
+  },
+  {
+    "id": "pacing_spike",
+    "labels": ["CD"],
+    "keywords": ["pace", "spike", "qrs", "conduction"],
+    "text": "A pacing spike is not the same measurement as a QRS duration of 120 ms.",
+    "check": null
+  },
+  {
+    "id": "sinus_rate_variation",
+    "labels": ["NORM"],
+    "keywords": ["sinus", "rate", "normal"],
+    "text": "A changing sinus rate is not evidence of infarction, hypertrophy, or a conduction block.",
+    "check": null
+  },
+  {
+    "id": "upright_t_ii",
+    "labels": ["NORM", "STTC"],
+    "keywords": ["t", "wave", "normal", "st"],
+    "text": "An upright T wave in lead II does not establish ST-segment depression.",
+    "check": null
+  },
+  {
+    "id": "tall_r_v1_alone",
+    "labels": ["CD", "MI", "HYP"],
+    "keywords": ["r", "v1", "voltage", "hypertrophy"],
+    "text": "A tall R wave in V1 alone is not the Sokolow-Lyon sum of V1 and V5 or V6.",
+    "check": null
+  },
+  {
+    "id": "poor_r_progression",
+    "labels": ["MI"],
+    "keywords": ["r", "progression", "infarct", "myocardial"],
+    "text": "Poor R-wave progression is a descriptive phrase and is not the 40 ms Q-wave rule.",
+    "check": null
+  },
+  {
+    "id": "broad_p_wave",
+    "labels": ["HYP", "CD"],
+    "keywords": ["p", "wave", "atrial", "hypertrophy"],
+    "text": "A broad P wave is not a ventricular voltage criterion.",
+    "check": null
+  },
+  {
+    "id": "u_wave",
+    "labels": ["STTC"],
+    "keywords": ["u", "wave", "repolarization"],
+    "text": "A U wave is not an ST-segment measurement.",
+    "check": null
+  },
+  {
+    "id": "j_point_name",
+    "labels": ["STTC"],
+    "keywords": ["j", "point", "st"],
+    "text": "Naming the J point does not establish ST depression of 0.1 mV.",
+    "check": null
+  },
+  {
+    "id": "epsilon_wave",
+    "labels": ["CD"],
+    "keywords": ["epsilon", "qrs", "conduction"],
+    "text": "An epsilon wave is not the same finding as a QRS duration of 120 ms.",
+    "check": null
+  },
+  {
+    "id": "capture_beat",
+    "labels": ["CD"],
+    "keywords": ["capture", "beat", "pr", "conduction"],
+    "text": "A capture beat is a rhythm event, not a PR-interval measurement.",
+    "check": null
+  },
+  {
+    "id": "fusion_beat",
+    "labels": ["CD"],
+    "keywords": ["fusion", "beat", "conduction"],
+    "text": "A fusion beat is not, by itself, delayed atrioventricular conduction.",
+    "check": null
+  },
+  {
+    "id": "electrical_alternans",
+    "labels": ["HYP"],
+    "keywords": ["alternans", "voltage", "hypertrophy"],
+    "text": "Electrical alternans is a beat-to-beat amplitude pattern, not the Sokolow-Lyon voltage.",
+    "check": null
+  },
+  {
+    "id": "pericarditis_story",
+    "labels": ["STTC"],
+    "keywords": ["pericarditis", "st", "story"],
+    "text": "A clinical story of pericarditis is not an ST measurement from lead II.",
+    "check": null
+  },
+  {
+    "id": "dextrocardia_name",
+    "labels": ["CD"],
+    "keywords": ["dextrocardia", "axis"],
+    "text": "Naming dextrocardia is not the same as measuring a frontal axis at or below -30 degrees.",
+    "check": null
+  },
+  {
+    "id": "athletic_training",
+    "labels": ["HYP"],
+    "keywords": ["athlete", "training", "voltage", "hypertrophy"],
+    "text": "Athletic training can increase voltage. Training status is not in this ECG.",
+    "check": null
+  },
+  {
+    "id": "body_habitus",
+    "labels": ["HYP"],
+    "keywords": ["obesity", "habitus", "voltage", "hypertrophy"],
+    "text": "Body habitus can lower voltage. Weight is not a substitute for the measured amplitudes.",
+    "check": null
+  },
+  {
+    "id": "fever_rate",
+    "labels": ["NORM"],
+    "keywords": ["fever", "rate", "heart"],
+    "text": "Fever can raise heart rate. It is not a measurement of the QRS.",
+    "check": null
+  },
+  {
+    "id": "caffeine",
+    "labels": ["NORM"],
+    "keywords": ["caffeine", "rate"],
+    "text": "Caffeine intake is not an ECG measurement.",
+    "check": null
+  },
+  {
+    "id": "printed_grid",
+    "labels": ["NORM"],
+    "keywords": ["grid", "paper", "display"],
+    "text": "The printed grid on ECG paper is not a patient measurement.",
+    "check": null
+  }
+]

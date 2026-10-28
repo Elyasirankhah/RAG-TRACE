@@ -1,0 +1,36 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "scored_notes": 1082,
+  "unparsed_notes": 1,
+  "probability_endpoint_case_rate": {
+    "no_retrieval": 0.024029574861367836,
+    "keyword": 0.6820702402957486,
+    "tfidf": 0.6765249537892791,
+    "check_12sl": 0.041589648798521256,
+    "check_both": 0.041589648798521256
+  },
+  "statement_endpoint_case_rate": {
+    "no_retrieval": 0.015711645101663587,
+    "keyword": 0.3410351201478743,
+    "tfidf": 0.20425138632162662,
+    "check_12sl": 0.22828096118299446,
+    "check_both": 0.19593345656192238
+  },
+  "mean_findings_not_stated": {
+    "no_retrieval": 0.3438077634011091,
+    "keyword": 0.31146025878003697,
+    "tfidf": 0.2634011090573013,
+    "check_12sl": 0.3142329020332717,
+    "check_both": 0.3179297597042514
+  },
+  "probability_keyword_minus_both_algorithms": {
+    "difference": 0.6404805914972274,
+    "ci95": [
+      0.6118299445471349,
+      0.6691312384473198
+    ],
+    "n_a_only": 693,
+    "n_b_only": 0,
+    "exact_mcnemar_p": 4.866794409715609e-209
+  }
+}

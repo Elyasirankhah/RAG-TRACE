@@ -1,0 +1,200 @@
+{
+  "scored_notes": 1083,
+  "human_validated_notes": 1083,
+  "arms": {
+    "no_retrieval": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.023084025854108958,
+      "diagnosis_absent_from_expert_label": 0.07479224376731301,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.07479224376731301,
+      "mean_affirmed_diagnoses": 0.3628808864265928,
+      "mean_applied_criteria": 0.0,
+      "mean_applied_supported_by_12sl": 0.0,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.0,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": null,
+      "linked_criteria_applied": 0
+    },
+    "keyword": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.0332409972299169,
+      "diagnosis_absent_from_expert_label": 0.06001846722068329,
+      "criterion_rejected_by_12sl_or_unchecked": 0.030470914127423823,
+      "criterion_rejected_by_unig": 0.08679593721144968,
+      "statement_mismatch": 0.25392428439519854,
+      "mean_affirmed_diagnoses": 0.29085872576177285,
+      "mean_applied_criteria": 0.433056325023084,
+      "mean_applied_supported_by_12sl": 0.39704524469067404,
+      "mean_applied_rejected_by_12sl": 0.036011080332409975,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.33887349953831947,
+      "mean_applied_rejected_by_unig": 0.09418282548476455,
+      "linked_criterion_precision_vs_scp": 0.327683615819209,
+      "linked_criteria_applied": 354
+    },
+    "check_12sl": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.0332409972299169,
+      "diagnosis_absent_from_expert_label": 0.06001846722068329,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.057248384118190214,
+      "statement_mismatch": 0.23915050784856878,
+      "mean_affirmed_diagnoses": 0.29085872576177285,
+      "mean_applied_criteria": 0.39704524469067404,
+      "mean_applied_supported_by_12sl": 0.39704524469067404,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.33887349953831947,
+      "mean_applied_rejected_by_unig": 0.05817174515235457,
+      "linked_criterion_precision_vs_scp": 0.3465045592705167,
+      "linked_criteria_applied": 329
+    },
+    "check_both": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.0332409972299169,
+      "diagnosis_absent_from_expert_label": 0.06001846722068329,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.2077562326869806,
+      "mean_affirmed_diagnoses": 0.29085872576177285,
+      "mean_applied_criteria": 0.33887349953831947,
+      "mean_applied_supported_by_12sl": 0.33887349953831947,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.33887349953831947,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": 0.3862815884476534,
+      "linked_criteria_applied": 277
+    }
+  },
+  "human_validated_arms": {
+    "no_retrieval": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.023084025854108958,
+      "diagnosis_absent_from_expert_label": 0.07479224376731301,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.07479224376731301,
+      "mean_affirmed_diagnoses": 0.3628808864265928,
+      "mean_applied_criteria": 0.0,
+      "mean_applied_supported_by_12sl": 0.0,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.0,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": null,
+      "linked_criteria_applied": 0
+    },
+    "keyword": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.0332409972299169,
+      "diagnosis_absent_from_expert_label": 0.06001846722068329,
+      "criterion_rejected_by_12sl_or_unchecked": 0.030470914127423823,
+      "criterion_rejected_by_unig": 0.08679593721144968,
+      "statement_mismatch": 0.25392428439519854,
+      "mean_affirmed_diagnoses": 0.29085872576177285,
+      "mean_applied_criteria": 0.433056325023084,
+      "mean_applied_supported_by_12sl": 0.39704524469067404,
+      "mean_applied_rejected_by_12sl": 0.036011080332409975,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.33887349953831947,
+      "mean_applied_rejected_by_unig": 0.09418282548476455,
+      "linked_criterion_precision_vs_scp": 0.327683615819209,
+      "linked_criteria_applied": 354
+    },
+    "check_12sl": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.0332409972299169,
+      "diagnosis_absent_from_expert_label": 0.06001846722068329,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.057248384118190214,
+      "statement_mismatch": 0.23915050784856878,
+      "mean_affirmed_diagnoses": 0.29085872576177285,
+      "mean_applied_criteria": 0.39704524469067404,
+      "mean_applied_supported_by_12sl": 0.39704524469067404,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.33887349953831947,
+      "mean_applied_rejected_by_unig": 0.05817174515235457,
+      "linked_criterion_precision_vs_scp": 0.3465045592705167,
+      "linked_criteria_applied": 329
+    },
+    "check_both": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.0332409972299169,
+      "diagnosis_absent_from_expert_label": 0.06001846722068329,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.2077562326869806,
+      "mean_affirmed_diagnoses": 0.29085872576177285,
+      "mean_applied_criteria": 0.33887349953831947,
+      "mean_applied_supported_by_12sl": 0.33887349953831947,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.33887349953831947,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": 0.3862815884476534,
+      "linked_criteria_applied": 277
+    }
+  },
+  "contrasts": {
+    "unig_rejection_keyword_minus_12sl_check": {
+      "difference": 0.029547553093259467,
+      "ci95": [
+        0.019390581717451533,
+        0.03970452446906741
+      ],
+      "n_a_only": 32,
+      "n_b_only": 0,
+      "exact_mcnemar_p": 4.656612873077393e-10
+    },
+    "criterion_12sl_keyword_minus_both": {
+      "difference": 0.030470914127423823,
+      "ci95": [
+        0.020313942751615882,
+        0.040650969529085534
+      ],
+      "n_a_only": 33,
+      "n_b_only": 0,
+      "exact_mcnemar_p": 2.3283064365386963e-10
+    },
+    "expert_diagnosis_keyword_minus_12sl_check": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_a_only": 0,
+      "n_b_only": 0,
+      "exact_mcnemar_p": null
+    },
+    "expert_diagnosis_keyword_minus_no_retrieval": {
+      "difference": -0.014773776546629723,
+      "ci95": [
+        -0.032317636195752536,
+        0.002770083102493076
+      ],
+      "n_a_only": 40,
+      "n_b_only": 56,
+      "exact_mcnemar_p": 0.1253456971884924
+    }
+  },
+  "withdrawals_by_12sl_check": {
+    "n": 39,
+    "no_numeric_check": 0,
+    "predicate_false_on_12sl": 39,
+    "unig_rejects": 39,
+    "unig_missing": 0,
+    "unig_supports": 0
+  },
+  "constraint": "json_schema strict. Criterion card_id must be one of the retrieved numeric-card ids.",
+  "identifiers": {
+    "applied": 469,
+    "empty_id": 0,
+    "invalid_id": 0
+  }
+}

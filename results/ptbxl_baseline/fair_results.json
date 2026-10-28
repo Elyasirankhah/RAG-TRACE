@@ -1,0 +1,206 @@
+{
+  "scored_notes": 1083,
+  "human_validated_notes": 1083,
+  "arms": {
+    "no_retrieval": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.04247460757156048,
+      "diagnosis_absent_from_expert_label": 0.07571560480147738,
+      "criterion_rejected_by_12sl_or_unchecked": 0.17359187442289936,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.07571560480147738,
+      "mean_affirmed_diagnoses": 0.3250230840258541,
+      "mean_applied_criteria": 0.17359187442289936,
+      "mean_applied_supported_by_12sl": 0.0,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.17359187442289936,
+      "mean_applied_supported_by_unig": 0.0,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": null,
+      "linked_criteria_applied": 0
+    },
+    "keyword": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.048938134810710986,
+      "diagnosis_absent_from_expert_label": 0.1061865189289012,
+      "criterion_rejected_by_12sl_or_unchecked": 0.31117266851338876,
+      "criterion_rejected_by_unig": 0.05909510618651893,
+      "statement_mismatch": 0.25761772853185594,
+      "mean_affirmed_diagnoses": 0.5364727608494921,
+      "mean_applied_criteria": 0.6112650046168052,
+      "mean_applied_supported_by_12sl": 0.29916897506925205,
+      "mean_applied_rejected_by_12sl": 0.018467220683287166,
+      "mean_applied_without_check": 0.29362880886426596,
+      "mean_applied_supported_by_unig": 0.25577100646352724,
+      "mean_applied_rejected_by_unig": 0.061865189289012,
+      "linked_criterion_precision_vs_scp": 0.225,
+      "linked_criteria_applied": 280
+    },
+    "check_12sl": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.048938134810710986,
+      "diagnosis_absent_from_expert_label": 0.1061865189289012,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.04339796860572484,
+      "statement_mismatch": 0.24561403508771928,
+      "mean_affirmed_diagnoses": 0.5364727608494921,
+      "mean_applied_criteria": 0.29916897506925205,
+      "mean_applied_supported_by_12sl": 0.29916897506925205,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.2548476454293629,
+      "mean_applied_rejected_by_unig": 0.0443213296398892,
+      "linked_criterion_precision_vs_scp": 0.23574144486692014,
+      "linked_criteria_applied": 263
+    },
+    "check_both": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.048938134810710986,
+      "diagnosis_absent_from_expert_label": 0.1061865189289012,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.22160664819944598,
+      "mean_affirmed_diagnoses": 0.5364727608494921,
+      "mean_applied_criteria": 0.2548476454293629,
+      "mean_applied_supported_by_12sl": 0.2548476454293629,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.2548476454293629,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": 0.2600896860986547,
+      "linked_criteria_applied": 223
+    }
+  },
+  "human_validated_arms": {
+    "no_retrieval": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.04247460757156048,
+      "diagnosis_absent_from_expert_label": 0.07571560480147738,
+      "criterion_rejected_by_12sl_or_unchecked": 0.17359187442289936,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.07571560480147738,
+      "mean_affirmed_diagnoses": 0.3250230840258541,
+      "mean_applied_criteria": 0.17359187442289936,
+      "mean_applied_supported_by_12sl": 0.0,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.17359187442289936,
+      "mean_applied_supported_by_unig": 0.0,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": null,
+      "linked_criteria_applied": 0
+    },
+    "keyword": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.048938134810710986,
+      "diagnosis_absent_from_expert_label": 0.1061865189289012,
+      "criterion_rejected_by_12sl_or_unchecked": 0.31117266851338876,
+      "criterion_rejected_by_unig": 0.05909510618651893,
+      "statement_mismatch": 0.25761772853185594,
+      "mean_affirmed_diagnoses": 0.5364727608494921,
+      "mean_applied_criteria": 0.6112650046168052,
+      "mean_applied_supported_by_12sl": 0.29916897506925205,
+      "mean_applied_rejected_by_12sl": 0.018467220683287166,
+      "mean_applied_without_check": 0.29362880886426596,
+      "mean_applied_supported_by_unig": 0.25577100646352724,
+      "mean_applied_rejected_by_unig": 0.061865189289012,
+      "linked_criterion_precision_vs_scp": 0.225,
+      "linked_criteria_applied": 280
+    },
+    "check_12sl": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.048938134810710986,
+      "diagnosis_absent_from_expert_label": 0.1061865189289012,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.04339796860572484,
+      "statement_mismatch": 0.24561403508771928,
+      "mean_affirmed_diagnoses": 0.5364727608494921,
+      "mean_applied_criteria": 0.29916897506925205,
+      "mean_applied_supported_by_12sl": 0.29916897506925205,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.2548476454293629,
+      "mean_applied_rejected_by_unig": 0.0443213296398892,
+      "linked_criterion_precision_vs_scp": 0.23574144486692014,
+      "linked_criteria_applied": 263
+    },
+    "check_both": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.048938134810710986,
+      "diagnosis_absent_from_expert_label": 0.1061865189289012,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.22160664819944598,
+      "mean_affirmed_diagnoses": 0.5364727608494921,
+      "mean_applied_criteria": 0.2548476454293629,
+      "mean_applied_supported_by_12sl": 0.2548476454293629,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.2548476454293629,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": 0.2600896860986547,
+      "linked_criteria_applied": 223
+    }
+  },
+  "contrasts": {
+    "release_keyword_minus_no_retrieval": {
+      "difference": 0.1375807940904894,
+      "ci95": [
+        0.10618651892890121,
+        0.16897506925207753
+      ],
+      "n_a_only": 236,
+      "n_b_only": 87,
+      "exact_mcnemar_p": 4.9049596959253305e-17
+    },
+    "unig_rejection_keyword_minus_12sl_check": {
+      "difference": 0.015697137580794086,
+      "ci95": [
+        0.009233610341643578,
+        0.023084025854108965
+      ],
+      "n_a_only": 17,
+      "n_b_only": 0,
+      "exact_mcnemar_p": 1.52587890625e-05
+    },
+    "criterion_12sl_keyword_minus_both": {
+      "difference": 0.31117266851338876,
+      "ci95": [
+        0.283471837488458,
+        0.33887349953831947
+      ],
+      "n_a_only": 337,
+      "n_b_only": 0,
+      "exact_mcnemar_p": 7.143671195514219e-102
+    },
+    "expert_diagnosis_keyword_minus_12sl_check": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_a_only": 0,
+      "n_b_only": 0,
+      "exact_mcnemar_p": null
+    },
+    "expert_diagnosis_keyword_minus_no_retrieval": {
+      "difference": 0.030470914127423823,
+      "ci95": [
+        0.01477377654662973,
+        0.047091412742382266
+      ],
+      "n_a_only": 57,
+      "n_b_only": 24,
+      "exact_mcnemar_p": 0.0003173169180222807
+    }
+  },
+  "withdrawals_by_12sl_check": {
+    "n": 338,
+    "no_numeric_check": 318,
+    "predicate_false_on_12sl": 20,
+    "unig_rejects": 19,
+    "unig_missing": 318,
+    "unig_supports": 1
+  },
+  "prompt": "Identical instructions. Keyword arm adds retrieved_cards. No arm forbids criterion claims.",
+  "retrieval_query": "Words of superclasses whose calibrated probability is at least 0.5. Stored test labels are not in the query or the prompt."
+}

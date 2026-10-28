@@ -1,0 +1,46 @@
+{
+  "scored_notes": 1083,
+  "attempted_notes": 1083,
+  "generation_failed": 0,
+  "probability_endpoint_case_rate": {
+    "no_retrieval": 0.023084025854108958,
+    "keyword": 0.5198522622345337,
+    "tfidf": 0.5521698984302862,
+    "check_12sl": 0.05263157894736842,
+    "check_both": 0.05263157894736842
+  },
+  "statement_endpoint_case_rate": {
+    "no_retrieval": 0.07479224376731301,
+    "keyword": 0.24930747922437674,
+    "tfidf": 0.20221606648199447,
+    "check_12sl": 0.24561403508771928,
+    "check_both": 0.22160664819944598
+  },
+  "mean_findings_not_stated": {
+    "no_retrieval": 0.3444136657433056,
+    "keyword": 0.28901200369344415,
+    "tfidf": 0.27331486611265005,
+    "check_12sl": 0.28901200369344415,
+    "check_both": 0.29270544783010155
+  },
+  "probability_keyword_minus_both_algorithms": {
+    "difference": 0.4672206832871653,
+    "ci95": [
+      0.4376731301939058,
+      0.4967682363804248
+    ],
+    "n_a_only": 506,
+    "n_b_only": 0,
+    "exact_mcnemar_p": 9.546676135936265e-153
+  },
+  "probability_keyword_minus_12sl": {
+    "difference": 0.4672206832871653,
+    "ci95": [
+      0.4376731301939058,
+      0.4967682363804248
+    ],
+    "n_a_only": 506,
+    "n_b_only": 0,
+    "exact_mcnemar_p": 9.546676135936265e-153
+  }
+}

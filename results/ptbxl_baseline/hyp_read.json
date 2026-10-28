@@ -1,0 +1,1553 @@
+{
+  "matched_schema_differs": {
+    "n": 107,
+    "no_cards": 66,
+    "keyword": 55,
+    "recall_no": 0.616822429906542,
+    "recall_key": 0.514018691588785
+  },
+  "fair_identical_json_object": {
+    "n": 107,
+    "no_cards": 67,
+    "keyword": 67,
+    "recall_no": 0.6261682242990654,
+    "recall_key": 0.6261682242990654
+  },
+  "fair_n": 1083,
+  "reads": [
+    {
+      "ecg_id": 4458,
+      "p_hyp": 0.636,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Hypertrophy is suggested by the ECG analysis.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 93 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 178 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 410 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal QRS axis is 50 degrees.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in lead V5 is 3.051 mV.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be correlated clinically.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 93 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 178 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 410 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in V1 is -1.323 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V5 is 3.051 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V6 is 2.167 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage is below 3.5 mV, does not meet threshold for left ventricular hypertrophy.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 6180,
+      "p_hyp": 0.588,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "NORM",
+          "card_id": null,
+          "applies": null,
+          "text": "Normal ECG pattern detected.",
+          "counted": [
+            "NORM"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Signs suggestive of hypertension present.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 65 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 126 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 92 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett formula is 416 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal plane QRS axis is 49 degrees.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This report is not a clinical diagnosis and should be interpreted by a qualified healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 65 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 126 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 92 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 416 ms.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "sokolow_lyon",
+          "applies": false,
+          "text": "Sokolow-Lyon voltage criterion for left ventricular hypertrophy does not apply as the sum of S-wave in V1 and the larger R-wave in V5 or V6 is below 3.5 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Voltage below Sokolow-Lyon threshold does not support left ventricular hypertrophy.",
+          "counted": []
+        },
+        {
+          "type": "diagnosis",
+          "label": "NORM",
+          "card_id": null,
+          "applies": null,
+          "text": "Normal ECG interpretation is likely.",
+          "counted": [
+            "NORM"
+          ]
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be correlated with clinical findings.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 6625,
+      "p_hyp": 0.812,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Hypertension detected based on ECG analysis.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 94 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 154 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 442 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal R axis is 37 degrees.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in lead V1 is -1.533 mV.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be confirmed by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 94 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 154 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 442 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in V1 is -1.533 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V5 is 2.617 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V6 is 2.26 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage is below 3.5 mV, does not meet the voltage threshold for left ventricular hypertrophy.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 7670,
+      "p_hyp": 0.636,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "The ECG indicates signs of hypertension.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 80 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 180 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 104 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 484 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal plane QRS axis is 32 degrees.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be confirmed by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 80 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 180 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 104 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 484 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in V1 is -0.81 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V5 is 3.408 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "sokolow_lyon",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage (|S in V1| + max R in V5 or V6) is at least 3.5 mV, supporting left ventricular hypertrophy.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This is not a clinical diagnosis. Please consult a healthcare professional for interpretation.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 7916,
+      "p_hyp": 0.636,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "STTC",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible ST-T changes detected.",
+          "counted": [
+            "STTC"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible signs of hypertension.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 93 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 160 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 102 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 487 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal QRS axis is 12 degrees.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be confirmed by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 93 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 160 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 102 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Bazett-corrected QT interval is 487 ms.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "long_qtc",
+          "applies": true,
+          "text": "A Bazett-corrected QT of at least 450 ms in men supports delayed ventricular repolarization.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "sokolow_lyon",
+          "applies": false,
+          "text": "Sokolow-Lyon voltage, the absolute S-wave amplitude in V1 plus the larger R-wave amplitude in V5 or V6, of at least 3.5 mV supports left ventricular hypertrophy.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "st_depression",
+          "applies": false,
+          "text": "An ST amplitude of -0.1 mV or lower in lead II supports ST-segment depression.",
+          "counted": []
+        },
+        {
+          "type": "diagnosis",
+          "label": "STTC",
+          "card_id": null,
+          "applies": null,
+          "text": "Probable ST-T changes (STTC) detected.",
+          "counted": [
+            "STTC"
+          ]
+        }
+      ]
+    },
+    {
+      "ecg_id": 8524,
+      "p_hyp": 0.636,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Hypertrophy detected based on ECG analysis.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 71 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 150 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 447 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal plane QRS axis is -13 degrees.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in lead V1 is -0.659 mV.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be confirmed by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 71 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 150 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett formula is 447 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in V1 is -0.659 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V5 is 0.82 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V6 is 0.766 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage below 3.5 mV does not meet the voltage threshold used here for left ventricular hypertrophy.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 8880,
+      "p_hyp": 0.588,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Hypertension (HYP) detected with probability 0.588.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 63 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 200 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 110 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett formula is 442 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal plane QRS axis is 10 degrees.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in lead V1 is -1.293 mV.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This is not a clinical diagnosis and should be interpreted by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 63 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 200 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 110 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 442 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in V1 is -1.293 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V5 is 2.553 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V6 is 1.933 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage is below 3.5 mV, does not meet voltage threshold for left ventricular hypertrophy.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 9024,
+      "p_hyp": 0.947,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Hypertrophy detected based on ECG analysis.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 63 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 180 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 442 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal R axis is 31 degrees.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in lead V5 is 3.344 mV.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This is not a clinical diagnosis and should be interpreted by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 63 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 180 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 90 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 442 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "S wave amplitude in V1 is -0.996 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V5 is 3.344 mV.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "R wave amplitude in V6 is 2.753 mV.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage is below 3.5 mV, does not meet the voltage threshold for left ventricular hypertrophy.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 10388,
+      "p_hyp": 0.588,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "NORM",
+          "card_id": null,
+          "applies": null,
+          "text": "Normal ECG",
+          "counted": [
+            "NORM"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible hypertension indicated by ECG",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 62 bpm",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 140 ms",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 96 ms",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett formula is 393 ms",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal R axis is 23 degrees",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be confirmed by a healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 62 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 140 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 96 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett formula is 393 ms.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "voltage_below_sokolow",
+          "applies": true,
+          "text": "Sokolow-Lyon voltage is below 3.5 mV, does not meet threshold for left ventricular hypertrophy.",
+          "counted": []
+        },
+        {
+          "type": "diagnosis",
+          "label": "NORM",
+          "card_id": null,
+          "applies": null,
+          "text": "Normal ECG findings are likely.",
+          "counted": [
+            "NORM"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Hypertrophy is suggested but not confirmed by voltage criteria.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This is not a clinical diagnosis and should be interpreted by a healthcare professional.",
+          "counted": []
+        }
+      ]
+    },
+    {
+      "ecg_id": 10837,
+      "p_hyp": 0.812,
+      "no_rag": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 76 beats per minute.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 158 milliseconds.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 110 milliseconds.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett's formula is 411 milliseconds.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Frontal plane QRS axis is 44 degrees.",
+          "counted": []
+        },
+        {
+          "type": "diagnosis",
+          "label": "STTC",
+          "card_id": null,
+          "applies": null,
+          "text": "There is a high probability of ST-T changes (STTC).",
+          "counted": [
+            "STTC"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "There is a high probability of hypertrophy (HYP).",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be correlated clinically.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 76 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 158 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 110 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Bazett-corrected QT interval is 411 ms.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "long_qtc",
+          "applies": false,
+          "text": "Bazett-corrected QT interval does not support delayed ventricular repolarization as it is below 460 ms for women.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "sokolow_lyon",
+          "applies": false,
+          "text": "Sokolow-Lyon voltage is 0.493 mV, which does not support left ventricular hypertrophy.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "st_depression",
+          "applies": false,
+          "text": "ST amplitude in lead II is -0.079 mV, which does not support ST-segment depression.",
+          "counted": []
+        },
+        {
+          "type": "diagnosis",
+          "label": "STTC",
+          "card_id": null,
+          "applies": null,
+          "text": "Probable ST-T changes (STTC) and hypertension (HYP) indicated by ECG analysis.",
+          "counted": [
+            "STTC"
+          ]
+        }
+      ]
+    },
+    {
+      "ecg_id": 17690,
+      "p_hyp": 0.588,
+      "no_rag": [
+        {
+          "type": "diagnosis",
+          "label": "STTC",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible ST-T changes detected.",
+          "counted": [
+            "STTC"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "CD",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible conduction disturbance detected.",
+          "counted": [
+            "CD"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "HYP",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible hypertrophy detected.",
+          "counted": [
+            "HYP"
+          ]
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 72 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 154 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 124 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QT interval corrected by Bazett formula is 424 ms.",
+          "counted": []
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This report is not a clinical diagnosis and should be interpreted by a qualified healthcare professional.",
+          "counted": []
+        }
+      ],
+      "keyword": [
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Heart rate is 72 bpm.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "PR interval is 154 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "QRS duration is 124 ms.",
+          "counted": []
+        },
+        {
+          "type": "measurement",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "Bazett-corrected QT interval is 424 ms.",
+          "counted": []
+        },
+        {
+          "type": "criterion",
+          "label": null,
+          "card_id": "narrow_qrs",
+          "applies": false,
+          "text": "QRS duration is not narrow as it is above 110 ms.",
+          "counted": []
+        },
+        {
+          "type": "diagnosis",
+          "label": "CD",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible conduction disturbance (CD) indicated by ECG analysis.",
+          "counted": [
+            "CD"
+          ]
+        },
+        {
+          "type": "diagnosis",
+          "label": "STTC",
+          "card_id": null,
+          "applies": null,
+          "text": "Possible ST-T changes (STTC) indicated by ECG analysis.",
+          "counted": [
+            "STTC"
+          ]
+        },
+        {
+          "type": "limit",
+          "label": null,
+          "card_id": null,
+          "applies": null,
+          "text": "This interpretation is not a clinical diagnosis and should be correlated clinically.",
+          "counted": []
+        }
+      ]
+    }
+  ]
+}

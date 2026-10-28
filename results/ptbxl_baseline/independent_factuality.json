@@ -1,0 +1,230 @@
+{
+  "question": "Does the measurement edit still reduce unsupported criteria when the judge is Uni-G, and do expert superclass labels move when the edit cannot rewrite diagnoses?",
+  "judge": "Uni-G did not enter the 12SL edit. Expert labels are the PTB-XL superclass indicators, not the 12SL predicate.",
+  "scored_notes": 1083,
+  "human_validated_notes": 1083,
+  "arms": {
+    "no_retrieval": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.023084025854108958,
+      "diagnosis_absent_from_expert_label": 0.07479224376731301,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.07479224376731301,
+      "mean_affirmed_diagnoses": 0.3628808864265928,
+      "mean_applied_criteria": 0.0,
+      "mean_applied_supported_by_12sl": 0.0,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.0,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": null,
+      "linked_criteria_applied": 0
+    },
+    "keyword": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.05263157894736842,
+      "diagnosis_absent_from_expert_label": 0.10064635272391505,
+      "criterion_rejected_by_12sl_or_unchecked": 0.46814404432132967,
+      "criterion_rejected_by_unig": 0.05263157894736842,
+      "statement_mismatch": 0.24930747922437674,
+      "mean_affirmed_diagnoses": 0.47460757156048017,
+      "mean_applied_criteria": 0.8910433979686058,
+      "mean_applied_supported_by_12sl": 0.29362880886426596,
+      "mean_applied_rejected_by_12sl": 0.007386888273314866,
+      "mean_applied_without_check": 0.590027700831025,
+      "mean_applied_supported_by_unig": 0.24838411819021236,
+      "mean_applied_rejected_by_unig": 0.05263157894736842,
+      "linked_criterion_precision_vs_scp": 0.23904382470119523,
+      "linked_criteria_applied": 251
+    },
+    "tfidf": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.057248384118190214,
+      "diagnosis_absent_from_expert_label": 0.10987996306555864,
+      "criterion_rejected_by_12sl_or_unchecked": 0.494921514312096,
+      "criterion_rejected_by_unig": 0.06925207756232687,
+      "statement_mismatch": 0.20221606648199447,
+      "mean_affirmed_diagnoses": 0.5743305632502308,
+      "mean_applied_criteria": 0.9289012003693444,
+      "mean_applied_supported_by_12sl": 0.28624192059095105,
+      "mean_applied_rejected_by_12sl": 0.03139427516158818,
+      "mean_applied_without_check": 0.6112650046168052,
+      "mean_applied_supported_by_unig": 0.24284395198522624,
+      "mean_applied_rejected_by_unig": 0.07479224376731301,
+      "linked_criterion_precision_vs_scp": 0.3684210526315789,
+      "linked_criteria_applied": 209
+    },
+    "check_12sl": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.05263157894736842,
+      "diagnosis_absent_from_expert_label": 0.10064635272391505,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.046168051708217916,
+      "statement_mismatch": 0.24561403508771928,
+      "mean_affirmed_diagnoses": 0.47460757156048017,
+      "mean_applied_criteria": 0.29362880886426596,
+      "mean_applied_supported_by_12sl": 0.29362880886426596,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.247460757156048,
+      "mean_applied_rejected_by_unig": 0.046168051708217916,
+      "linked_criterion_precision_vs_scp": 0.24489795918367346,
+      "linked_criteria_applied": 245
+    },
+    "check_both": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.05263157894736842,
+      "diagnosis_absent_from_expert_label": 0.10064635272391505,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.22160664819944598,
+      "mean_affirmed_diagnoses": 0.47460757156048017,
+      "mean_applied_criteria": 0.247460757156048,
+      "mean_applied_supported_by_12sl": 0.247460757156048,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.247460757156048,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": 0.27450980392156865,
+      "linked_criteria_applied": 204
+    }
+  },
+  "human_validated_arms": {
+    "no_retrieval": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.023084025854108958,
+      "diagnosis_absent_from_expert_label": 0.07479224376731301,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.07479224376731301,
+      "mean_affirmed_diagnoses": 0.3628808864265928,
+      "mean_applied_criteria": 0.0,
+      "mean_applied_supported_by_12sl": 0.0,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.0,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": null,
+      "linked_criteria_applied": 0
+    },
+    "keyword": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.05263157894736842,
+      "diagnosis_absent_from_expert_label": 0.10064635272391505,
+      "criterion_rejected_by_12sl_or_unchecked": 0.46814404432132967,
+      "criterion_rejected_by_unig": 0.05263157894736842,
+      "statement_mismatch": 0.24930747922437674,
+      "mean_affirmed_diagnoses": 0.47460757156048017,
+      "mean_applied_criteria": 0.8910433979686058,
+      "mean_applied_supported_by_12sl": 0.29362880886426596,
+      "mean_applied_rejected_by_12sl": 0.007386888273314866,
+      "mean_applied_without_check": 0.590027700831025,
+      "mean_applied_supported_by_unig": 0.24838411819021236,
+      "mean_applied_rejected_by_unig": 0.05263157894736842,
+      "linked_criterion_precision_vs_scp": 0.23904382470119523,
+      "linked_criteria_applied": 251
+    },
+    "tfidf": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.057248384118190214,
+      "diagnosis_absent_from_expert_label": 0.10987996306555864,
+      "criterion_rejected_by_12sl_or_unchecked": 0.494921514312096,
+      "criterion_rejected_by_unig": 0.06925207756232687,
+      "statement_mismatch": 0.20221606648199447,
+      "mean_affirmed_diagnoses": 0.5743305632502308,
+      "mean_applied_criteria": 0.9289012003693444,
+      "mean_applied_supported_by_12sl": 0.28624192059095105,
+      "mean_applied_rejected_by_12sl": 0.03139427516158818,
+      "mean_applied_without_check": 0.6112650046168052,
+      "mean_applied_supported_by_unig": 0.24284395198522624,
+      "mean_applied_rejected_by_unig": 0.07479224376731301,
+      "linked_criterion_precision_vs_scp": 0.3684210526315789,
+      "linked_criteria_applied": 209
+    },
+    "check_12sl": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.05263157894736842,
+      "diagnosis_absent_from_expert_label": 0.10064635272391505,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.046168051708217916,
+      "statement_mismatch": 0.24561403508771928,
+      "mean_affirmed_diagnoses": 0.47460757156048017,
+      "mean_applied_criteria": 0.29362880886426596,
+      "mean_applied_supported_by_12sl": 0.29362880886426596,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.247460757156048,
+      "mean_applied_rejected_by_unig": 0.046168051708217916,
+      "linked_criterion_precision_vs_scp": 0.24489795918367346,
+      "linked_criteria_applied": 245
+    },
+    "check_both": {
+      "n": 1083,
+      "diagnosis_below_0.5": 0.05263157894736842,
+      "diagnosis_absent_from_expert_label": 0.10064635272391505,
+      "criterion_rejected_by_12sl_or_unchecked": 0.0,
+      "criterion_rejected_by_unig": 0.0,
+      "statement_mismatch": 0.22160664819944598,
+      "mean_affirmed_diagnoses": 0.47460757156048017,
+      "mean_applied_criteria": 0.247460757156048,
+      "mean_applied_supported_by_12sl": 0.247460757156048,
+      "mean_applied_rejected_by_12sl": 0.0,
+      "mean_applied_without_check": 0.0,
+      "mean_applied_supported_by_unig": 0.247460757156048,
+      "mean_applied_rejected_by_unig": 0.0,
+      "linked_criterion_precision_vs_scp": 0.27450980392156865,
+      "linked_criteria_applied": 204
+    }
+  },
+  "contrasts": {
+    "unig_rejection_keyword_minus_12sl_check": {
+      "difference": 0.006463527239150502,
+      "ci95": [
+        0.0018467220683287197,
+        0.012003693444136654
+      ],
+      "n_a_only": 7,
+      "n_b_only": 0,
+      "exact_mcnemar_p": 0.015625
+    },
+    "criterion_12sl_keyword_minus_both": {
+      "difference": 0.46814404432132967,
+      "ci95": [
+        0.43859649122807015,
+        0.4976915974145891
+      ],
+      "n_a_only": 507,
+      "n_b_only": 0,
+      "exact_mcnemar_p": 4.7733380679681323e-153
+    },
+    "expert_diagnosis_keyword_minus_12sl_check": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_a_only": 0,
+      "n_b_only": 0,
+      "exact_mcnemar_p": null
+    },
+    "expert_diagnosis_keyword_minus_no_retrieval": {
+      "difference": 0.025854108956602034,
+      "ci95": [
+        0.0064635272391505155,
+        0.04524469067405355
+      ],
+      "n_a_only": 67,
+      "n_b_only": 39,
+      "exact_mcnemar_p": 0.00841699357053395
+    }
+  },
+  "withdrawals_by_12sl_check": {
+    "n": 647,
+    "no_numeric_check": 639,
+    "predicate_false_on_12sl": 8,
+    "unig_rejects": 7,
+    "unig_missing": 639,
+    "unig_supports": 1
+  }
+}

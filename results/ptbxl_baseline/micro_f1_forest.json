@@ -1,0 +1,96 @@
+{
+  "reference": "PTB-XL superclass codes. Agreement with a stored code, not a clinical reading.",
+  "bootstrap": "10,000 patient resamples, seed 2. Difference is keyword minus no retrieval.",
+  "models": [
+    {
+      "label": "gpt-4.1-mini",
+      "path": "results\\ptbxl_baseline\\heldout_generations.jsonl",
+      "scored": 1083,
+      "skipped": 0,
+      "micro_f1": {
+        "no_retrieval": 0.7960501329282187,
+        "keyword": 0.7882396724972087,
+        "difference": -0.007810460431009969,
+        "ci95": [
+          -0.018075163891778788,
+          0.0026411696868474735
+        ]
+      }
+    },
+    {
+      "label": "GLM-5.3-Flash",
+      "path": "results\\ptbxl_baseline\\glm\\heldout_generations.jsonl",
+      "scored": 1083,
+      "skipped": 0,
+      "micro_f1": {
+        "no_retrieval": 0.7978311386522074,
+        "keyword": 0.7829518547750591,
+        "difference": -0.01487928387714832,
+        "ci95": [
+          -0.023649046884114018,
+          -0.006298439914471117
+        ]
+      }
+    },
+    {
+      "label": "Qwen3-8B",
+      "path": "results\\ptbxl_baseline\\open_models\\Qwen__Qwen3-8B.jsonl",
+      "scored": 1083,
+      "skipped": 0,
+      "micro_f1": {
+        "no_retrieval": 0.8033873343151694,
+        "keyword": 0.8013293943870016,
+        "difference": -0.002057939928167829,
+        "ci95": [
+          -0.007501595266500366,
+          0.0033281695000687873
+        ]
+      }
+    },
+    {
+      "label": "Qwen3-14B",
+      "path": "results\\ptbxl_baseline\\open_models\\Qwen__Qwen3-14B.jsonl",
+      "scored": 1083,
+      "skipped": 0,
+      "micro_f1": {
+        "no_retrieval": 0.7991250455705433,
+        "keyword": 0.8026013771996939,
+        "difference": 0.0034763316291506197,
+        "ci95": [
+          -0.0019868673033311356,
+          0.008949468797342609
+        ]
+      }
+    },
+    {
+      "label": "Gemma 3 12B",
+      "path": "results\\ptbxl_baseline\\open_models\\google__gemma-3-12b-it.jsonl",
+      "scored": 1083,
+      "skipped": 0,
+      "micro_f1": {
+        "no_retrieval": 0.7309105757452021,
+        "keyword": 0.8039364118092354,
+        "difference": 0.07302583606403323,
+        "ci95": [
+          0.05958969298937695,
+          0.08681674442108157
+        ]
+      }
+    },
+    {
+      "label": "MedGemma 4B",
+      "path": "results\\ptbxl_baseline\\open_models\\google__medgemma-4b-it.jsonl",
+      "scored": 904,
+      "skipped": 179,
+      "micro_f1": {
+        "no_retrieval": 0.718625099920064,
+        "keyword": 0.6345558992487849,
+        "difference": -0.0840692006712791,
+        "ci95": [
+          -0.10613228692338013,
+          -0.06201917009920989
+        ]
+      }
+    }
+  ]
+}

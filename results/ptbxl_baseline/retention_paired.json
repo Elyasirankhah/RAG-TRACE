@@ -1,0 +1,38 @@
+{
+  "rule": "12SL withdrawal. Uni-G is the judge and is not an input to this edit.",
+  "population": "patients whose no-card, keyword, and TF-IDF notes all parse",
+  "gpt-4.1-mini": {
+    "patients": 1083,
+    "applied": 965,
+    "unig_rejects": 57,
+    "unig_rejects_withdrawn": 7,
+    "unig_supports": 269,
+    "unig_supports_kept": 268,
+    "no_check": 639,
+    "no_check_withdrawn": 639,
+    "predicate_false": 8,
+    "predicate_false_withdrawn": 8,
+    "unig_missing": 0,
+    "fraction_unig_rejections_withdrawn": 0.12280701754385964,
+    "fraction_unig_supported_kept": 0.9962825278810409,
+    "fraction_unchecked_withdrawn": 1.0,
+    "fraction_false_predicates_withdrawn": 1.0
+  },
+  "Qwen3-8B": {
+    "patients": 1082,
+    "applied": 1422,
+    "unig_rejects": 260,
+    "unig_rejects_withdrawn": 203,
+    "unig_supports": 282,
+    "unig_supports_kept": 274,
+    "no_check": 880,
+    "no_check_withdrawn": 880,
+    "predicate_false": 211,
+    "predicate_false_withdrawn": 211,
+    "unig_missing": 0,
+    "fraction_unig_rejections_withdrawn": 0.7807692307692308,
+    "fraction_unig_supported_kept": 0.9716312056737588,
+    "fraction_unchecked_withdrawn": 1.0,
+    "fraction_false_predicates_withdrawn": 1.0
+  }
+}

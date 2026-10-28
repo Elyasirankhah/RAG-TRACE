@@ -1,0 +1,1983 @@
+{
+  "reference": "PTB-XL superclass codes. Agreement with a stored code, not a clinical reading of the sentence.",
+  "prediction": "Deduplicated label-aware affirmed superclasses. The cue list is not used.",
+  "arms": {
+    "gpt_heldout": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8219607843137255,
+        "micro_recall": 0.7717231222385862,
+        "micro_f1": 0.7960501329282187,
+        "true_positives": 1048,
+        "false_positives": 227,
+        "omissions": 310,
+        "mean_predicted": 1.1772853185595569,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.28624192059095105,
+        "notes_with_no_affirmed_diagnosis": 0.06740535549399815,
+        "notes_with_any_false_diagnosis": 0.19759926131117267,
+        "notes_with_any_omission": 0.2677746999076639,
+        "exact_set_match": 0.6528162511542013,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8582834331337326,
+            "recall": 0.849802371541502
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8034934497816594,
+            "recall": 0.7301587301587301
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7551867219917012,
+            "recall": 0.7489711934156379
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8779342723004695,
+            "recall": 0.748
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7142857142857143,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.7968397291196389,
+        "micro_recall": 0.7798232695139912,
+        "micro_f1": 0.7882396724972087,
+        "true_positives": 1059,
+        "false_positives": 270,
+        "omissions": 299,
+        "mean_predicted": 1.2271468144044322,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.2760849492151431,
+        "notes_with_no_affirmed_diagnosis": 0.024930747922437674,
+        "notes_with_any_false_diagnosis": 0.2299168975069252,
+        "notes_with_any_omission": 0.25577100646352724,
+        "exact_set_match": 0.6500461680517082,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8308823529411765,
+            "recall": 0.8932806324110671
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7708333333333334,
+            "recall": 0.7341269841269841
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7364016736401674,
+            "recall": 0.7242798353909465
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8663594470046083,
+            "recall": 0.752
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.651685393258427,
+            "recall": 0.5420560747663551
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1083,
+        "micro_precision": 0.7940959409594096,
+        "micro_recall": 0.792341678939617,
+        "micro_f1": 0.7932178400294876,
+        "true_positives": 1076,
+        "false_positives": 279,
+        "omissions": 282,
+        "mean_predicted": 1.2511542012927055,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.26038781163434904,
+        "notes_with_no_affirmed_diagnosis": 0.012003693444136657,
+        "notes_with_any_false_diagnosis": 0.2299168975069252,
+        "notes_with_any_omission": 0.2409972299168975,
+        "exact_set_match": 0.6685133887349953,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.829136690647482,
+            "recall": 0.9110671936758893
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7763713080168776,
+            "recall": 0.7301587301587301
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7344398340248963,
+            "recall": 0.7283950617283951
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8513513513513513,
+            "recall": 0.756
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.6565656565656566,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": 0.02108341028008609,
+          "ci95": [
+            0.00707910126192679,
+            0.035703293321021956
+          ],
+          "keyword": 0.8020160049245921,
+          "no_retrieval": 0.780932594644506,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": -0.010156971375807955,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": 0.032317636195752536,
+          "ci95": [
+            0.01569713758079408,
+            0.04893813481071099
+          ],
+          "n_a_only": 62,
+          "n_b_only": 27,
+          "exact_mcnemar_p": 0.00026558534298746995
+        }
+      }
+    },
+    "gpt_numeric_cards": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval_source": "original no-card notes joined by electrocardiogram id; prompts were not matched",
+      "borrowed_no_rag": 1083,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8219607843137255,
+        "micro_recall": 0.7717231222385862,
+        "micro_f1": 0.7960501329282187,
+        "true_positives": 1048,
+        "false_positives": 227,
+        "omissions": 310,
+        "mean_predicted": 1.1772853185595569,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.28624192059095105,
+        "notes_with_no_affirmed_diagnosis": 0.06740535549399815,
+        "notes_with_any_false_diagnosis": 0.19759926131117267,
+        "notes_with_any_omission": 0.2677746999076639,
+        "exact_set_match": 0.6528162511542013,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8582834331337326,
+            "recall": 0.849802371541502
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8034934497816594,
+            "recall": 0.7301587301587301
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7551867219917012,
+            "recall": 0.7489711934156379
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8779342723004695,
+            "recall": 0.748
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7142857142857143,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.7806451612903226,
+        "micro_recall": 0.8019145802650958,
+        "micro_f1": 0.7911369415183438,
+        "true_positives": 1089,
+        "false_positives": 306,
+        "omissions": 269,
+        "mean_predicted": 1.2880886426592797,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.24838411819021236,
+        "notes_with_no_affirmed_diagnosis": 0.0110803324099723,
+        "notes_with_any_false_diagnosis": 0.2520775623268698,
+        "notes_with_any_omission": 0.23084025854108955,
+        "exact_set_match": 0.6472760849492152,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8312387791741472,
+            "recall": 0.9150197628458498
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7310606060606061,
+            "recall": 0.7658730158730159
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7246963562753036,
+            "recall": 0.7366255144032922
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8165938864628821,
+            "recall": 0.748
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.6836734693877551,
+            "recall": 0.6261682242990654
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1083,
+        "micro_precision": 0.7817659727207465,
+        "micro_recall": 0.8019145802650958,
+        "micro_f1": 0.7917121046892039,
+        "true_positives": 1089,
+        "false_positives": 304,
+        "omissions": 269,
+        "mean_predicted": 1.286241920590951,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.24838411819021236,
+        "notes_with_no_affirmed_diagnosis": 0.014773776546629732,
+        "notes_with_any_false_diagnosis": 0.2530009233610342,
+        "notes_with_any_omission": 0.22807017543859648,
+        "exact_set_match": 0.6472760849492152,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8193202146690519,
+            "recall": 0.9051383399209486
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7142857142857143,
+            "recall": 0.753968253968254
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7322834645669292,
+            "recall": 0.7654320987654321
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8482142857142857,
+            "recall": 0.76
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7222222222222222,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": 0.04170514004309023,
+          "ci95": [
+            0.02646968297937835,
+            0.05786395814096634
+          ],
+          "keyword": 0.8226377346875963,
+          "no_retrieval": 0.780932594644506,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": -0.03785780240073869,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": 0.05447830101569712,
+          "ci95": [
+            0.03785780240073869,
+            0.07202216066481995
+          ],
+          "n_a_only": 76,
+          "n_b_only": 17,
+          "exact_mcnemar_p": 4.446306937765536e-10
+        }
+      }
+    },
+    "gpt_matched_prompt": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8122171945701357,
+        "micro_recall": 0.7930780559646539,
+        "micro_f1": 0.8025335320417286,
+        "true_positives": 1077,
+        "false_positives": 249,
+        "omissions": 281,
+        "mean_predicted": 1.2243767313019391,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.2594644506001847,
+        "notes_with_no_affirmed_diagnosis": 0.030470914127423823,
+        "notes_with_any_false_diagnosis": 0.2123730378578024,
+        "notes_with_any_omission": 0.24192059095106186,
+        "exact_set_match": 0.6749769159741459,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8417132216014898,
+            "recall": 0.8932806324110671
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8105726872246696,
+            "recall": 0.7301587301587301
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7540983606557377,
+            "recall": 0.757201646090535
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8597285067873304,
+            "recall": 0.76
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.6907216494845361,
+            "recall": 0.6261682242990654
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8077786088257293,
+        "micro_recall": 0.7952871870397643,
+        "micro_f1": 0.8014842300556586,
+        "true_positives": 1080,
+        "false_positives": 257,
+        "omissions": 278,
+        "mean_predicted": 1.234533702677747,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.2566943674976916,
+        "notes_with_no_affirmed_diagnosis": 0.02585410895660203,
+        "notes_with_any_false_diagnosis": 0.22068328716528163,
+        "notes_with_any_omission": 0.24007386888273316,
+        "exact_set_match": 0.6703601108033241,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8379373848987108,
+            "recall": 0.8992094861660079
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7974137931034483,
+            "recall": 0.7341269841269841
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7418032786885246,
+            "recall": 0.7448559670781894
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8687782805429864,
+            "recall": 0.768
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.6907216494845361,
+            "recall": 0.6261682242990654
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": 0.003231763619575223,
+          "ci95": [
+            -0.005540166204986208,
+            0.012465373961218829
+          ],
+          "keyword": 0.8109418282548476,
+          "no_retrieval": 0.8077100646352724,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": -0.002770083102493104,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": 0.008310249307479228,
+          "ci95": [
+            -0.0009233610341643494,
+            0.018467220683287155
+          ],
+          "n_a_only": 18,
+          "n_b_only": 9,
+          "exact_mcnemar_p": 0.12207812070846558
+        }
+      }
+    },
+    "gpt_constrained": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval_source": "original no-card notes joined by electrocardiogram id; prompts were not matched",
+      "borrowed_no_rag": 1083,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8219607843137255,
+        "micro_recall": 0.7717231222385862,
+        "micro_f1": 0.7960501329282187,
+        "true_positives": 1048,
+        "false_positives": 227,
+        "omissions": 310,
+        "mean_predicted": 1.1772853185595569,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.28624192059095105,
+        "notes_with_no_affirmed_diagnosis": 0.06740535549399815,
+        "notes_with_any_false_diagnosis": 0.19759926131117267,
+        "notes_with_any_omission": 0.2677746999076639,
+        "exact_set_match": 0.6528162511542013,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8582834331337326,
+            "recall": 0.849802371541502
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8034934497816594,
+            "recall": 0.7301587301587301
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7551867219917012,
+            "recall": 0.7489711934156379
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8779342723004695,
+            "recall": 0.748
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7142857142857143,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8251670378619154,
+        "micro_recall": 0.5456553755522827,
+        "micro_f1": 0.6569148936170213,
+        "true_positives": 741,
+        "false_positives": 157,
+        "omissions": 617,
+        "mean_predicted": 0.8291782086795937,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.569713758079409,
+        "notes_with_no_affirmed_diagnosis": 0.26500461680517085,
+        "notes_with_any_false_diagnosis": 0.14035087719298245,
+        "notes_with_any_omission": 0.48291782086795937,
+        "exact_set_match": 0.4838411819021237,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8452722063037249,
+            "recall": 0.5830039525691699
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8146341463414634,
+            "recall": 0.6626984126984127
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7569060773480663,
+            "recall": 0.5637860082304527
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.9133858267716536,
+            "recall": 0.464
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7222222222222222,
+            "recall": 0.24299065420560748
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.20983379501385047,
+          "ci95": [
+            -0.23691905201600483,
+            -0.18336411203447223
+          ],
+          "keyword": 0.5710987996306556,
+          "no_retrieval": 0.780932594644506,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.283471837488458,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.05724838411819022,
+          "ci95": [
+            -0.07663896583564175,
+            -0.03785780240073869
+          ],
+          "n_a_only": 26,
+          "n_b_only": 88,
+          "exact_mcnemar_p": 4.5895722935023815e-09
+        }
+      }
+    },
+    "gpt_matched_constrained": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8408360128617364,
+        "micro_recall": 0.7702503681885126,
+        "micro_f1": 0.8039969254419678,
+        "true_positives": 1046,
+        "false_positives": 198,
+        "omissions": 312,
+        "mean_predicted": 1.1486611265004616,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.2880886426592798,
+        "notes_with_no_affirmed_diagnosis": 0.07109879963065559,
+        "notes_with_any_false_diagnosis": 0.1745152354570637,
+        "notes_with_any_omission": 0.26685133887349954,
+        "exact_set_match": 0.6712834718374885,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8720472440944882,
+            "recall": 0.8754940711462451
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8492462311557789,
+            "recall": 0.6706349206349206
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7615062761506276,
+            "recall": 0.7489711934156379
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8857142857142857,
+            "recall": 0.744
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.75,
+            "recall": 0.616822429906542
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.843801652892562,
+        "micro_recall": 0.751840942562592,
+        "micro_f1": 0.795171339563863,
+        "true_positives": 1021,
+        "false_positives": 189,
+        "omissions": 337,
+        "mean_predicted": 1.1172668513388735,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.31117266851338876,
+        "notes_with_no_affirmed_diagnosis": 0.08679593721144968,
+        "notes_with_any_false_diagnosis": 0.16712834718374883,
+        "notes_with_any_omission": 0.2853185595567867,
+        "exact_set_match": 0.6620498614958449,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.876,
+            "recall": 0.8656126482213439
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8477157360406091,
+            "recall": 0.6626984126984127
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.759493670886076,
+            "recall": 0.7407407407407407
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8916256157635468,
+            "recall": 0.724
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7534246575342466,
+            "recall": 0.514018691588785
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.01977531548168665,
+          "ci95": [
+            -0.028085564789165907,
+            -0.012157586949830712
+          ],
+          "keyword": 0.7620806401969837,
+          "no_retrieval": 0.7818559556786704,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.023084025854108958,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.007386888273314879,
+          "ci95": [
+            -0.01477377654662973,
+            0.0
+          ],
+          "n_a_only": 4,
+          "n_b_only": 12,
+          "exact_mcnemar_p": 0.076812744140625
+        }
+      }
+    },
+    "qwen3_8b": {
+      "scored": 1082,
+      "skipped": 1,
+      "no_retrieval": {
+        "n": 1082,
+        "micro_precision": 0.8030973451327433,
+        "micro_recall": 0.8030973451327433,
+        "micro_f1": 0.8030973451327433,
+        "true_positives": 1089,
+        "false_positives": 267,
+        "omissions": 267,
+        "mean_predicted": 1.2532347504621073,
+        "mean_gold": 1.2532347504621073,
+        "mean_omissions": 0.24676524953789278,
+        "notes_with_no_affirmed_diagnosis": 0.011090573012939002,
+        "notes_with_any_false_diagnosis": 0.21719038817005545,
+        "notes_with_any_omission": 0.2301293900184843,
+        "exact_set_match": 0.6857670979667283,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.848314606741573,
+            "recall": 0.8952569169960475
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8,
+            "recall": 0.746031746031746
+          },
+          "STTC": {
+            "support": 242,
+            "precision": 0.7286821705426356,
+            "recall": 0.7768595041322314
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8502202643171806,
+            "recall": 0.772
+          },
+          "HYP": {
+            "support": 106,
+            "precision": 0.6568627450980392,
+            "recall": 0.6320754716981132
+          }
+        }
+      },
+      "keyword": {
+        "n": 1082,
+        "micro_precision": 0.8034124629080118,
+        "micro_recall": 0.7986725663716814,
+        "micro_f1": 0.8010355029585798,
+        "true_positives": 1083,
+        "false_positives": 265,
+        "omissions": 273,
+        "mean_predicted": 1.2458410351201479,
+        "mean_gold": 1.2532347504621073,
+        "mean_omissions": 0.25231053604436227,
+        "notes_with_no_affirmed_diagnosis": 0.021256931608133085,
+        "notes_with_any_false_diagnosis": 0.21811460258780038,
+        "notes_with_any_omission": 0.2356746765249538,
+        "exact_set_match": 0.6746765249537893,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.846441947565543,
+            "recall": 0.8932806324110671
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7966101694915254,
+            "recall": 0.746031746031746
+          },
+          "STTC": {
+            "support": 242,
+            "precision": 0.7398373983739838,
+            "recall": 0.7520661157024794
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8434782608695652,
+            "recall": 0.776
+          },
+          "HYP": {
+            "support": 106,
+            "precision": 0.6568627450980392,
+            "recall": 0.6320754716981132
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1082,
+        "micro_precision": 0.8029925187032418,
+        "micro_recall": 0.7123893805309734,
+        "micro_f1": 0.7549824150058617,
+        "true_positives": 966,
+        "false_positives": 237,
+        "omissions": 390,
+        "mean_predicted": 1.111829944547135,
+        "mean_gold": 1.2532347504621073,
+        "mean_omissions": 0.36044362292051757,
+        "notes_with_no_affirmed_diagnosis": 0.1321626617375231,
+        "notes_with_any_false_diagnosis": 0.19500924214417745,
+        "notes_with_any_omission": 0.32624768946395566,
+        "exact_set_match": 0.5905730129390019,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8448598130841122,
+            "recall": 0.8932806324110671
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7866108786610879,
+            "recall": 0.746031746031746
+          },
+          "STTC": {
+            "support": 242,
+            "precision": 0.673469387755102,
+            "recall": 0.2727272727272727
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8427947598253275,
+            "recall": 0.772
+          },
+          "HYP": {
+            "support": 106,
+            "precision": 0.6568627450980392,
+            "recall": 0.6320754716981132
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.0064695009242145,
+          "ci95": [
+            -0.015249537892791154,
+            0.002310536044362266
+          ],
+          "keyword": 0.8144639556377079,
+          "no_retrieval": 0.8209334565619224,
+          "n": 1082
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.005545286506469488,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": 0.0009242144177449285,
+          "ci95": [
+            -0.009242144177449146,
+            0.011090573012939003
+          ],
+          "n_a_only": 16,
+          "n_b_only": 15,
+          "exact_mcnemar_p": 1.0
+        }
+      }
+    },
+    "qwen3_14b": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.7913357400722022,
+        "micro_recall": 0.8070692194403535,
+        "micro_f1": 0.7991250455705433,
+        "true_positives": 1096,
+        "false_positives": 289,
+        "omissions": 262,
+        "mean_predicted": 1.2788550323176362,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.24192059095106186,
+        "notes_with_no_affirmed_diagnosis": 0.009233610341643583,
+        "notes_with_any_false_diagnosis": 0.22714681440443213,
+        "notes_with_any_omission": 0.22530009233610343,
+        "exact_set_match": 0.6786703601108033,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8256227758007118,
+            "recall": 0.9169960474308301
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.7914893617021277,
+            "recall": 0.7380952380952381
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7078651685393258,
+            "recall": 0.7777777777777778
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8414096916299559,
+            "recall": 0.764
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7021276595744681,
+            "recall": 0.616822429906542
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8351910828025477,
+        "micro_recall": 0.772459499263623,
+        "micro_f1": 0.8026013771996939,
+        "true_positives": 1049,
+        "false_positives": 207,
+        "omissions": 309,
+        "mean_predicted": 1.159741458910434,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.2853185595567867,
+        "notes_with_no_affirmed_diagnosis": 0.06740535549399815,
+        "notes_with_any_false_diagnosis": 0.17820867959372114,
+        "notes_with_any_omission": 0.2659279778393352,
+        "exact_set_match": 0.6703601108033241,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.869140625,
+            "recall": 0.8794466403162056
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.85,
+            "recall": 0.6746031746031746
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7479338842975206,
+            "recall": 0.7448559670781894
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8785046728971962,
+            "recall": 0.752
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7386363636363636,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1083,
+        "micro_precision": 0.8350597609561753,
+        "micro_recall": 0.7717231222385862,
+        "micro_f1": 0.8021431305013395,
+        "true_positives": 1048,
+        "false_positives": 207,
+        "omissions": 310,
+        "mean_predicted": 1.1588180978762697,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.28624192059095105,
+        "notes_with_no_affirmed_diagnosis": 0.06740535549399815,
+        "notes_with_any_false_diagnosis": 0.17820867959372114,
+        "notes_with_any_omission": 0.2659279778393352,
+        "exact_set_match": 0.6703601108033241,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.869140625,
+            "recall": 0.8794466403162056
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8492462311557789,
+            "recall": 0.6706349206349206
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7479338842975206,
+            "recall": 0.7448559670781894
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8785046728971962,
+            "recall": 0.752
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7386363636363636,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.04155124653739606,
+          "ci95": [
+            -0.05355493998153282,
+            -0.03000923361034169
+          ],
+          "keyword": 0.7832409972299169,
+          "no_retrieval": 0.824792243767313,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.04339796860572484,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.04893813481071099,
+          "ci95": [
+            -0.061865189289012024,
+            -0.03693444136657431
+          ],
+          "n_a_only": 0,
+          "n_b_only": 53,
+          "exact_mcnemar_p": 2.220446049250313e-16
+        }
+      }
+    },
+    "gemma3_12b": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8203483043079743,
+        "micro_recall": 0.6590574374079529,
+        "micro_f1": 0.7309105757452021,
+        "true_positives": 895,
+        "false_positives": 196,
+        "omissions": 463,
+        "mean_predicted": 1.0073868882733148,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.4275161588180979,
+        "notes_with_no_affirmed_diagnosis": 0.20683287165281625,
+        "notes_with_any_false_diagnosis": 0.17266851338873498,
+        "notes_with_any_omission": 0.40443213296398894,
+        "exact_set_match": 0.5373961218836565,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8396501457725948,
+            "recall": 0.5691699604743083
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8514851485148515,
+            "recall": 0.6825396825396826
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7541666666666667,
+            "recall": 0.7448559670781894
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8709677419354839,
+            "recall": 0.756
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7303370786516854,
+            "recall": 0.6074766355140186
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8271028037383178,
+        "micro_recall": 0.7820324005891016,
+        "micro_f1": 0.8039364118092354,
+        "true_positives": 1062,
+        "false_positives": 222,
+        "omissions": 296,
+        "mean_predicted": 1.185595567867036,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.27331486611265005,
+        "notes_with_no_affirmed_diagnosis": 0.02123730378578024,
+        "notes_with_any_false_diagnosis": 0.19759926131117267,
+        "notes_with_any_omission": 0.2566943674976916,
+        "exact_set_match": 0.6869806094182825,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8695652173913043,
+            "recall": 0.8695652173913043
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8380952380952381,
+            "recall": 0.6984126984126984
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.746031746031746,
+            "recall": 0.7736625514403292
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8642533936651584,
+            "recall": 0.764
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7052631578947368,
+            "recall": 0.6261682242990654
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1083,
+        "micro_precision": 0.8269680436477007,
+        "micro_recall": 0.7812960235640648,
+        "micro_f1": 0.8034835289663006,
+        "true_positives": 1061,
+        "false_positives": 222,
+        "omissions": 297,
+        "mean_predicted": 1.1846722068328717,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.2742382271468144,
+        "notes_with_no_affirmed_diagnosis": 0.02123730378578024,
+        "notes_with_any_false_diagnosis": 0.19667590027700832,
+        "notes_with_any_omission": 0.25761772853185594,
+        "exact_set_match": 0.6879039704524469,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8707753479125249,
+            "recall": 0.8656126482213439
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8341232227488151,
+            "recall": 0.6984126984126984
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.746031746031746,
+            "recall": 0.7736625514403292
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8654708520179372,
+            "recall": 0.772
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7021276595744681,
+            "recall": 0.616822429906542
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": 0.1523545706371191,
+          "ci95": [
+            0.12973222530009232,
+            0.17451523545706382
+          ],
+          "keyword": 0.7970914127423823,
+          "no_retrieval": 0.6447368421052632,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": -0.15420129270544786,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": 0.024930747922437685,
+          "ci95": [
+            0.01477377654662973,
+            0.03601108033240996
+          ],
+          "n_a_only": 31,
+          "n_b_only": 4,
+          "exact_mcnemar_p": 3.4654513001441956e-06
+        }
+      }
+    },
+    "medgemma_4b": {
+      "scored": 850,
+      "skipped": 233,
+      "no_retrieval": {
+        "n": 850,
+        "micro_precision": 0.6706827309236948,
+        "micro_recall": 0.7899716177861873,
+        "micro_f1": 0.7254561251086011,
+        "true_positives": 835,
+        "false_positives": 410,
+        "omissions": 222,
+        "mean_predicted": 1.464705882352941,
+        "mean_gold": 1.2435294117647058,
+        "mean_omissions": 0.2611764705882353,
+        "notes_with_no_affirmed_diagnosis": 0.004705882352941176,
+        "notes_with_any_false_diagnosis": 0.2847058823529412,
+        "notes_with_any_omission": 0.24352941176470588,
+        "exact_set_match": 0.6235294117647059,
+        "by_class": {
+          "NORM": {
+            "support": 385,
+            "precision": 0.883289124668435,
+            "recall": 0.8649350649350649
+          },
+          "MI": {
+            "support": 178,
+            "precision": 0.6043478260869565,
+            "recall": 0.7808988764044944
+          },
+          "STTC": {
+            "support": 205,
+            "precision": 0.5752508361204013,
+            "recall": 0.8390243902439024
+          },
+          "CD": {
+            "support": 201,
+            "precision": 0.6730769230769231,
+            "recall": 0.6965174129353234
+          },
+          "HYP": {
+            "support": 88,
+            "precision": 0.3893129770992366,
+            "recall": 0.5795454545454546
+          }
+        }
+      },
+      "keyword": {
+        "n": 850,
+        "micro_precision": 0.6441005802707931,
+        "micro_recall": 0.630085146641438,
+        "micro_f1": 0.6370157819225252,
+        "true_positives": 666,
+        "false_positives": 368,
+        "omissions": 391,
+        "mean_predicted": 1.2164705882352942,
+        "mean_gold": 1.2435294117647058,
+        "mean_omissions": 0.46,
+        "notes_with_no_affirmed_diagnosis": 0.21294117647058824,
+        "notes_with_any_false_diagnosis": 0.2529411764705882,
+        "notes_with_any_omission": 0.3952941176470588,
+        "exact_set_match": 0.4811764705882353,
+        "by_class": {
+          "NORM": {
+            "support": 385,
+            "precision": 0.871313672922252,
+            "recall": 0.8441558441558441
+          },
+          "MI": {
+            "support": 178,
+            "precision": 0.6164383561643836,
+            "recall": 0.7584269662921348
+          },
+          "STTC": {
+            "support": 205,
+            "precision": 0.4166666666666667,
+            "recall": 0.34146341463414637
+          },
+          "CD": {
+            "support": 201,
+            "precision": 0.554140127388535,
+            "recall": 0.43283582089552236
+          },
+          "HYP": {
+            "support": 88,
+            "precision": 0.4188034188034188,
+            "recall": 0.5568181818181818
+          }
+        }
+      },
+      "tfidf": {
+        "n": 850,
+        "micro_precision": 0.7131782945736435,
+        "micro_recall": 0.609271523178808,
+        "micro_f1": 0.6571428571428573,
+        "true_positives": 644,
+        "false_positives": 259,
+        "omissions": 413,
+        "mean_predicted": 1.0623529411764705,
+        "mean_gold": 1.2435294117647058,
+        "mean_omissions": 0.4858823529411765,
+        "notes_with_no_affirmed_diagnosis": 0.13647058823529412,
+        "notes_with_any_false_diagnosis": 0.23294117647058823,
+        "notes_with_any_omission": 0.3729411764705882,
+        "exact_set_match": 0.5564705882352942,
+        "by_class": {
+          "NORM": {
+            "support": 385,
+            "precision": 0.8324873096446701,
+            "recall": 0.8519480519480519
+          },
+          "MI": {
+            "support": 178,
+            "precision": 0.7479674796747967,
+            "recall": 0.5168539325842697
+          },
+          "STTC": {
+            "support": 205,
+            "precision": 0.6077586206896551,
+            "recall": 0.6878048780487804
+          },
+          "CD": {
+            "support": 201,
+            "precision": 0.6296296296296297,
+            "recall": 0.3383084577114428
+          },
+          "HYP": {
+            "support": 88,
+            "precision": 0.32608695652173914,
+            "recall": 0.17045454545454544
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.17068627450980378,
+          "ci95": [
+            -0.1977450980392157,
+            -0.14441176470588235
+          ],
+          "keyword": 0.6399019607843138,
+          "no_retrieval": 0.8105882352941176,
+          "n": 850
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.19882352941176473,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.03176470588235297,
+          "ci95": [
+            -0.05529411764705883,
+            -0.007058823529411784
+          ],
+          "n_a_only": 42,
+          "n_b_only": 69,
+          "exact_mcnemar_p": 0.013233607758826234
+        }
+      }
+    },
+    "deepseek_r1_8b": {
+      "scored": 112,
+      "skipped": 971,
+      "no_retrieval": {
+        "n": 112,
+        "micro_precision": 0.8151260504201681,
+        "micro_recall": 0.6879432624113475,
+        "micro_f1": 0.7461538461538462,
+        "true_positives": 97,
+        "false_positives": 22,
+        "omissions": 44,
+        "mean_predicted": 1.0625,
+        "mean_gold": 1.2589285714285714,
+        "mean_omissions": 0.39285714285714285,
+        "notes_with_no_affirmed_diagnosis": 0.11607142857142858,
+        "notes_with_any_false_diagnosis": 0.1875,
+        "notes_with_any_omission": 0.38392857142857145,
+        "exact_set_match": 0.5446428571428571,
+        "by_class": {
+          "NORM": {
+            "support": 31,
+            "precision": 0.875,
+            "recall": 0.6774193548387096
+          },
+          "MI": {
+            "support": 33,
+            "precision": 0.8636363636363636,
+            "recall": 0.5757575757575758
+          },
+          "STTC": {
+            "support": 28,
+            "precision": 0.6666666666666666,
+            "recall": 0.6428571428571429
+          },
+          "CD": {
+            "support": 36,
+            "precision": 0.8857142857142857,
+            "recall": 0.8611111111111112
+          },
+          "HYP": {
+            "support": 13,
+            "precision": 0.7272727272727273,
+            "recall": 0.6153846153846154
+          }
+        }
+      },
+      "keyword": {
+        "n": 112,
+        "micro_precision": 0.8,
+        "micro_recall": 0.7092198581560284,
+        "micro_f1": 0.7518796992481204,
+        "true_positives": 100,
+        "false_positives": 25,
+        "omissions": 41,
+        "mean_predicted": 1.1160714285714286,
+        "mean_gold": 1.2589285714285714,
+        "mean_omissions": 0.36607142857142855,
+        "notes_with_no_affirmed_diagnosis": 0.044642857142857144,
+        "notes_with_any_false_diagnosis": 0.21428571428571427,
+        "notes_with_any_omission": 0.35714285714285715,
+        "exact_set_match": 0.5714285714285714,
+        "by_class": {
+          "NORM": {
+            "support": 31,
+            "precision": 0.8333333333333334,
+            "recall": 0.8064516129032258
+          },
+          "MI": {
+            "support": 33,
+            "precision": 0.875,
+            "recall": 0.6363636363636364
+          },
+          "STTC": {
+            "support": 28,
+            "precision": 0.6785714285714286,
+            "recall": 0.6785714285714286
+          },
+          "CD": {
+            "support": 36,
+            "precision": 0.8285714285714286,
+            "recall": 0.8055555555555556
+          },
+          "HYP": {
+            "support": 13,
+            "precision": 0.75,
+            "recall": 0.46153846153846156
+          }
+        }
+      },
+      "tfidf": {
+        "n": 112,
+        "micro_precision": 0.8,
+        "micro_recall": 0.6808510638297872,
+        "micro_f1": 0.7356321839080461,
+        "true_positives": 96,
+        "false_positives": 24,
+        "omissions": 45,
+        "mean_predicted": 1.0714285714285714,
+        "mean_gold": 1.2589285714285714,
+        "mean_omissions": 0.4017857142857143,
+        "notes_with_no_affirmed_diagnosis": 0.0625,
+        "notes_with_any_false_diagnosis": 0.19642857142857142,
+        "notes_with_any_omission": 0.375,
+        "exact_set_match": 0.5714285714285714,
+        "by_class": {
+          "NORM": {
+            "support": 31,
+            "precision": 0.8148148148148148,
+            "recall": 0.7096774193548387
+          },
+          "MI": {
+            "support": 33,
+            "precision": 0.8695652173913043,
+            "recall": 0.6060606060606061
+          },
+          "STTC": {
+            "support": 28,
+            "precision": 0.6538461538461539,
+            "recall": 0.6071428571428571
+          },
+          "CD": {
+            "support": 36,
+            "precision": 0.8823529411764706,
+            "recall": 0.8333333333333334
+          },
+          "HYP": {
+            "support": 13,
+            "precision": 0.7,
+            "recall": 0.5384615384615384
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": 0.03422619047619058,
+          "ci95": [
+            -0.029761904761904878,
+            0.09970238095238093
+          ],
+          "keyword": 0.7336309523809524,
+          "no_retrieval": 0.6994047619047619,
+          "n": 112
+        },
+        "mean_omissions_keyword_minus_no_retrieval": -0.0267857142857143,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": 0.026785714285714274,
+          "ci95": [
+            -0.01785714285714285,
+            0.07142857142857145
+          ],
+          "n_a_only": 5,
+          "n_b_only": 2,
+          "exact_mcnemar_p": 0.453125
+        }
+      }
+    },
+    "glm_heldout": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8415032679738562,
+        "micro_recall": 0.7584683357879234,
+        "micro_f1": 0.7978311386522074,
+        "true_positives": 1030,
+        "false_positives": 194,
+        "omissions": 328,
+        "mean_predicted": 1.1301939058171746,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3028624192059095,
+        "notes_with_no_affirmed_diagnosis": 0.07386888273314866,
+        "notes_with_any_false_diagnosis": 0.17174515235457063,
+        "notes_with_any_omission": 0.28162511542012925,
+        "exact_set_match": 0.6620498614958449,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.873015873015873,
+            "recall": 0.8695652173913043
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8534031413612565,
+            "recall": 0.6468253968253969
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.759493670886076,
+            "recall": 0.7407407407407407
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8883495145631068,
+            "recall": 0.732
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7441860465116279,
+            "recall": 0.5981308411214953
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8435374149659864,
+        "micro_recall": 0.7304860088365243,
+        "micro_f1": 0.7829518547750591,
+        "true_positives": 992,
+        "false_positives": 184,
+        "omissions": 366,
+        "mean_predicted": 1.0858725761772854,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3379501385041551,
+        "notes_with_no_affirmed_diagnosis": 0.08956602031394276,
+        "notes_with_any_false_diagnosis": 0.1634349030470914,
+        "notes_with_any_omission": 0.30378578024007385,
+        "exact_set_match": 0.6435826408125577,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8767967145790554,
+            "recall": 0.8438735177865613
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8534031413612565,
+            "recall": 0.6468253968253969
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7612612612612613,
+            "recall": 0.6954732510288066
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8888888888888888,
+            "recall": 0.704
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7307692307692307,
+            "recall": 0.5327102803738317
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1083,
+        "micro_precision": 0.8464163822525598,
+        "micro_recall": 0.7304860088365243,
+        "micro_f1": 0.7841897233201581,
+        "true_positives": 992,
+        "false_positives": 180,
+        "omissions": 366,
+        "mean_predicted": 1.082179132040628,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3379501385041551,
+        "notes_with_no_affirmed_diagnosis": 0.09879963065558633,
+        "notes_with_any_false_diagnosis": 0.15881809787626963,
+        "notes_with_any_omission": 0.3074792243767313,
+        "exact_set_match": 0.6491228070175439,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8755186721991701,
+            "recall": 0.83399209486166
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8638743455497382,
+            "recall": 0.6547619047619048
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7623318385650224,
+            "recall": 0.6995884773662552
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8939393939393939,
+            "recall": 0.708
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7435897435897436,
+            "recall": 0.5420560747663551
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.01977531548168676,
+          "ci95": [
+            -0.029547553093259515,
+            -0.010464758387196071
+          ],
+          "keyword": 0.7519236688211757,
+          "no_retrieval": 0.7716989843028624,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.03508771929824561,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.008310249307479228,
+          "ci95": [
+            -0.014773776546629758,
+            -0.0018467220683287267
+          ],
+          "n_a_only": 2,
+          "n_b_only": 11,
+          "exact_mcnemar_p": 0.0224609375
+        }
+      }
+    },
+    "glm_numeric_cards": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval_source": "original no-card notes joined by electrocardiogram id; prompts were not matched",
+      "borrowed_no_rag": 1083,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8415032679738562,
+        "micro_recall": 0.7584683357879234,
+        "micro_f1": 0.7978311386522074,
+        "true_positives": 1030,
+        "false_positives": 194,
+        "omissions": 328,
+        "mean_predicted": 1.1301939058171746,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3028624192059095,
+        "notes_with_no_affirmed_diagnosis": 0.07386888273314866,
+        "notes_with_any_false_diagnosis": 0.17174515235457063,
+        "notes_with_any_omission": 0.28162511542012925,
+        "exact_set_match": 0.6620498614958449,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.873015873015873,
+            "recall": 0.8695652173913043
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8534031413612565,
+            "recall": 0.6468253968253969
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.759493670886076,
+            "recall": 0.7407407407407407
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8883495145631068,
+            "recall": 0.732
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7441860465116279,
+            "recall": 0.5981308411214953
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.846286701208981,
+        "micro_recall": 0.7216494845360825,
+        "micro_f1": 0.7790143084260731,
+        "true_positives": 980,
+        "false_positives": 178,
+        "omissions": 378,
+        "mean_predicted": 1.0692520775623269,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3490304709141274,
+        "notes_with_no_affirmed_diagnosis": 0.10156971375807941,
+        "notes_with_any_false_diagnosis": 0.15789473684210525,
+        "notes_with_any_omission": 0.3047091412742382,
+        "exact_set_match": 0.6481994459833795,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8744939271255061,
+            "recall": 0.8537549407114624
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8548387096774194,
+            "recall": 0.6309523809523809
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7616822429906542,
+            "recall": 0.6707818930041153
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8860103626943006,
+            "recall": 0.684
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7746478873239436,
+            "recall": 0.514018691588785
+          }
+        }
+      },
+      "tfidf": {
+        "n": 1083,
+        "micro_precision": 0.8459552495697074,
+        "micro_recall": 0.7238586156111929,
+        "micro_f1": 0.7801587301587303,
+        "true_positives": 983,
+        "false_positives": 179,
+        "omissions": 375,
+        "mean_predicted": 1.0729455216989843,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3462603878116344,
+        "notes_with_no_affirmed_diagnosis": 0.09141274238227147,
+        "notes_with_any_false_diagnosis": 0.15881809787626963,
+        "notes_with_any_omission": 0.3056325023084026,
+        "exact_set_match": 0.6472760849492152,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8772635814889336,
+            "recall": 0.8616600790513834
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8594594594594595,
+            "recall": 0.6309523809523809
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7547169811320755,
+            "recall": 0.6584362139917695
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8844221105527639,
+            "recall": 0.704
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7536231884057971,
+            "recall": 0.48598130841121495
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.02631578947368418,
+          "ci95": [
+            -0.03785780240073877,
+            -0.015389350569406046
+          ],
+          "keyword": 0.7453831948291783,
+          "no_retrieval": 0.7716989843028624,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.046168051708217916,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.01385041551246538,
+          "ci95": [
+            -0.02216066481994461,
+            -0.006463527239150502
+          ],
+          "n_a_only": 2,
+          "n_b_only": 17,
+          "exact_mcnemar_p": 0.000728607177734375
+        }
+      }
+    },
+    "glm_matched_prompt": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8421926910299004,
+        "micro_recall": 0.7466863033873343,
+        "micro_f1": 0.791569086651054,
+        "true_positives": 1014,
+        "false_positives": 190,
+        "omissions": 344,
+        "mean_predicted": 1.1117266851338874,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.31763619575253926,
+        "notes_with_no_affirmed_diagnosis": 0.07940904893813482,
+        "notes_with_any_false_diagnosis": 0.16712834718374883,
+        "notes_with_any_omission": 0.2871652816251154,
+        "exact_set_match": 0.6602031394275162,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8747514910536779,
+            "recall": 0.8695652173913043
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8534031413612565,
+            "recall": 0.6468253968253969
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7533039647577092,
+            "recall": 0.7037037037037037
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8866995073891626,
+            "recall": 0.72
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.75,
+            "recall": 0.5607476635514018
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8443877551020408,
+        "micro_recall": 0.7312223858615611,
+        "micro_f1": 0.7837411207576953,
+        "true_positives": 993,
+        "false_positives": 183,
+        "omissions": 365,
+        "mean_predicted": 1.0858725761772854,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.33702677746999077,
+        "notes_with_no_affirmed_diagnosis": 0.08033240997229917,
+        "notes_with_any_false_diagnosis": 0.16251154201292706,
+        "notes_with_any_omission": 0.3056325023084026,
+        "exact_set_match": 0.6454293628808865,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8747474747474747,
+            "recall": 0.8557312252964426
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8497409326424871,
+            "recall": 0.6507936507936508
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7654867256637168,
+            "recall": 0.7119341563786008
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8934010152284264,
+            "recall": 0.704
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7230769230769231,
+            "recall": 0.4392523364485981
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.010464758387196071,
+          "ci95": [
+            -0.019467528470298534,
+            -0.001844798399507447
+          ],
+          "keyword": 0.7555401662049861,
+          "no_retrieval": 0.7660049245921822,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.019390581717451505,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.004616805170821775,
+          "ci95": [
+            -0.012927054478301003,
+            0.002770083102493076
+          ],
+          "n_a_only": 7,
+          "n_b_only": 12,
+          "exact_mcnemar_p": 0.359283447265625
+        }
+      }
+    },
+    "glm_constrained": {
+      "scored": 1083,
+      "skipped": 0,
+      "no_retrieval_source": "original no-card notes joined by electrocardiogram id; prompts were not matched",
+      "borrowed_no_rag": 1083,
+      "no_retrieval": {
+        "n": 1083,
+        "micro_precision": 0.8415032679738562,
+        "micro_recall": 0.7584683357879234,
+        "micro_f1": 0.7978311386522074,
+        "true_positives": 1030,
+        "false_positives": 194,
+        "omissions": 328,
+        "mean_predicted": 1.1301939058171746,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.3028624192059095,
+        "notes_with_no_affirmed_diagnosis": 0.07386888273314866,
+        "notes_with_any_false_diagnosis": 0.17174515235457063,
+        "notes_with_any_omission": 0.28162511542012925,
+        "exact_set_match": 0.6620498614958449,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.873015873015873,
+            "recall": 0.8695652173913043
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.8534031413612565,
+            "recall": 0.6468253968253969
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.759493670886076,
+            "recall": 0.7407407407407407
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8883495145631068,
+            "recall": 0.732
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.7441860465116279,
+            "recall": 0.5981308411214953
+          }
+        }
+      },
+      "keyword": {
+        "n": 1083,
+        "micro_precision": 0.8458748866727108,
+        "micro_recall": 0.687039764359352,
+        "micro_f1": 0.7582283624542868,
+        "true_positives": 933,
+        "false_positives": 170,
+        "omissions": 425,
+        "mean_predicted": 1.0184672206832872,
+        "mean_gold": 1.2539242843951985,
+        "mean_omissions": 0.39242843951985223,
+        "notes_with_no_affirmed_diagnosis": 0.12280701754385964,
+        "notes_with_any_false_diagnosis": 0.1523545706371191,
+        "notes_with_any_omission": 0.33240997229916897,
+        "exact_set_match": 0.628808864265928,
+        "by_class": {
+          "NORM": {
+            "support": 506,
+            "precision": 0.8701825557809331,
+            "recall": 0.8478260869565217
+          },
+          "MI": {
+            "support": 252,
+            "precision": 0.848314606741573,
+            "recall": 0.5992063492063492
+          },
+          "STTC": {
+            "support": 243,
+            "precision": 0.7584541062801933,
+            "recall": 0.6460905349794238
+          },
+          "CD": {
+            "support": 250,
+            "precision": 0.8941176470588236,
+            "recall": 0.608
+          },
+          "HYP": {
+            "support": 107,
+            "precision": 0.8,
+            "recall": 0.411214953271028
+          }
+        }
+      },
+      "paired": {
+        "patient_recall_keyword_minus_no_retrieval": {
+          "difference": -0.052477685441674415,
+          "ci95": [
+            -0.0665589412126808,
+            -0.03893505694059707
+          ],
+          "keyword": 0.719221298861188,
+          "no_retrieval": 0.7716989843028624,
+          "n": 1083
+        },
+        "mean_omissions_keyword_minus_no_retrieval": 0.08956602031394273,
+        "any_false_keyword_minus_no_retrieval": {
+          "difference": -0.019390581717451533,
+          "ci95": [
+            -0.02954755309325946,
+            -0.010156971375807955
+          ],
+          "n_a_only": 3,
+          "n_b_only": 24,
+          "exact_mcnemar_p": 4.9233436584472656e-05
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+numpy==1.24.3
+pandas==2.3.3
+scikit-learn==1.9.0
+scipy==1.15.3
+matplotlib==3.8.4
+boto3==1.35.99

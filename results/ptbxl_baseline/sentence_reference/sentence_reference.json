@@ -1,0 +1,1156 @@
+{
+  "role": "Automated blinded reference on real generated sentences. Not clinical validation and not a clinician reading.",
+  "sample": {
+    "gpt_heldout": 300,
+    "gpt_constrained": 100,
+    "qwen3_8b": 150,
+    "qwen3_14b": 150,
+    "gemma3_12b": 150,
+    "medgemma_4b": 150
+  },
+  "seed": 17,
+  "judges": [
+    "gpt-4.1",
+    "glm-5.3-flash"
+  ],
+  "judge_inputs": "sentence text only; no JSON label, patient data, PTB-XL code, or rule",
+  "sentences_sampled": 1000,
+  "sentences_with_both_judges": 1000,
+  "judges_agree_exactly": 862,
+  "inter_judge": {
+    "n": 1000,
+    "exact_set_agreement": 0.862,
+    "micro_precision": 0.9752475247524752,
+    "micro_recall": 0.8687982359426681,
+    "micro_f1": 0.9189504373177844,
+    "per_class": {
+      "NORM": {
+        "reference_positive": 343,
+        "kappa": 0.8926015921813958
+      },
+      "MI": {
+        "reference_positive": 170,
+        "kappa": 0.8697717174812317
+      },
+      "STTC": {
+        "reference_positive": 195,
+        "kappa": 0.9236235637909277
+      },
+      "CD": {
+        "reference_positive": 141,
+        "kappa": 0.8739499581333788
+      },
+      "HYP": {
+        "reference_positive": 58,
+        "kappa": 0.9422899353647276
+      }
+    }
+  },
+  "flagged_ambiguous_or_disputed": 294,
+  "methods_against_reference": {
+    "label_aware_rule": {
+      "consensus_reference": {
+        "n": 862,
+        "exact_set_agreement": 0.8863109048723898,
+        "micro_precision": 0.9124087591240876,
+        "micro_recall": 0.9529860228716646,
+        "micro_f1": 0.9322560596643877,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 313,
+            "kappa": 0.9701069837068035
+          },
+          "MI": {
+            "reference_positive": 136,
+            "kappa": 0.9610624265968017
+          },
+          "STTC": {
+            "reference_positive": 173,
+            "kappa": 0.9073986541651268
+          },
+          "CD": {
+            "reference_positive": 113,
+            "kappa": 0.8324689315105003
+          },
+          "HYP": {
+            "reference_positive": 52,
+            "kappa": 0.7495434169018765
+          }
+        }
+      },
+      "gpt-4.1": {
+        "n": 1000,
+        "exact_set_agreement": 0.791,
+        "micro_precision": 0.810126582278481,
+        "micro_recall": 0.9504950495049505,
+        "micro_f1": 0.8747152619589977,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 331,
+            "kappa": 0.9077016389551824
+          },
+          "MI": {
+            "reference_positive": 138,
+            "kappa": 0.8433942949687552
+          },
+          "STTC": {
+            "reference_positive": 174,
+            "kappa": 0.8558484349258647
+          },
+          "CD": {
+            "reference_positive": 113,
+            "kappa": 0.7390307344787458
+          },
+          "HYP": {
+            "reference_positive": 52,
+            "kappa": 0.7126048147146334
+          }
+        }
+      },
+      "glm-5.3-flash": {
+        "n": 1000,
+        "exact_set_agreement": 0.873,
+        "micro_precision": 0.9050632911392406,
+        "micro_recall": 0.9459757442116868,
+        "micro_f1": 0.925067385444744,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 343,
+            "kappa": 0.9345318371675854
+          },
+          "MI": {
+            "reference_positive": 170,
+            "kappa": 0.9540408682740578
+          },
+          "STTC": {
+            "reference_positive": 195,
+            "kappa": 0.8982939632545931
+          },
+          "CD": {
+            "reference_positive": 141,
+            "kappa": 0.8537595649149433
+          },
+          "HYP": {
+            "reference_positive": 58,
+            "kappa": 0.7731250405133856
+          }
+        }
+      }
+    },
+    "text_only_extractor": {
+      "consensus_reference": {
+        "n": 862,
+        "exact_set_agreement": 0.6496519721577726,
+        "micro_precision": 0.9531835205992509,
+        "micro_recall": 0.6467598475222364,
+        "micro_f1": 0.7706283118849357,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 313,
+            "kappa": 0.47342873935927837
+          },
+          "MI": {
+            "reference_positive": 136,
+            "kappa": 0.961742166464479
+          },
+          "STTC": {
+            "reference_positive": 173,
+            "kappa": 0.8222843267512716
+          },
+          "CD": {
+            "reference_positive": 113,
+            "kappa": 0.7363071318325294
+          },
+          "HYP": {
+            "reference_positive": 52,
+            "kappa": 0.7751108792068871
+          }
+        }
+      },
+      "gpt-4.1": {
+        "n": 1000,
+        "exact_set_agreement": 0.623,
+        "micro_precision": 0.8432,
+        "micro_recall": 0.6522277227722773,
+        "micro_f1": 0.7355198883461269,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 331,
+            "kappa": 0.46779385199551715
+          },
+          "MI": {
+            "reference_positive": 138,
+            "kappa": 0.850115411133427
+          },
+          "STTC": {
+            "reference_positive": 174,
+            "kappa": 0.7687666084301089
+          },
+          "CD": {
+            "reference_positive": 113,
+            "kappa": 0.7310727857351648
+          },
+          "HYP": {
+            "reference_positive": 52,
+            "kappa": 0.7593629681484076
+          }
+        }
+      },
+      "glm-5.3-flash": {
+        "n": 1000,
+        "exact_set_agreement": 0.633,
+        "micro_precision": 0.9312,
+        "micro_recall": 0.6416758544652701,
+        "micro_f1": 0.7597911227154047,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 343,
+            "kappa": 0.47312696636542934
+          },
+          "MI": {
+            "reference_positive": 170,
+            "kappa": 0.9582579657715319
+          },
+          "STTC": {
+            "reference_positive": 195,
+            "kappa": 0.8258507192365294
+          },
+          "CD": {
+            "reference_positive": 141,
+            "kappa": 0.6407492943289712
+          },
+          "HYP": {
+            "reference_positive": 58,
+            "kappa": 0.7316710700132101
+          }
+        }
+      }
+    },
+    "frozen_cue_list": {
+      "consensus_reference": {
+        "n": 862,
+        "exact_set_agreement": 0.3329466357308585,
+        "micro_precision": 0.9330543933054394,
+        "micro_recall": 0.2833545108005083,
+        "micro_f1": 0.4346978557504874,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 313,
+            "kappa": 0.14348540394728368
+          },
+          "MI": {
+            "reference_positive": 136,
+            "kappa": 0.5555599065408361
+          },
+          "STTC": {
+            "reference_positive": 173,
+            "kappa": 0.46846955966393977
+          },
+          "CD": {
+            "reference_positive": 113,
+            "kappa": 0.5356506905684654
+          },
+          "HYP": {
+            "reference_positive": 52,
+            "kappa": 0.42518004801280307
+          }
+        }
+      },
+      "gpt-4.1": {
+        "n": 1000,
+        "exact_set_agreement": 0.329,
+        "micro_precision": 0.707936507936508,
+        "micro_recall": 0.275990099009901,
+        "micro_f1": 0.3971504897595726,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 331,
+            "kappa": 0.1256622459226428
+          },
+          "MI": {
+            "reference_positive": 138,
+            "kappa": 0.45855483362866717
+          },
+          "STTC": {
+            "reference_positive": 174,
+            "kappa": 0.4335515869476009
+          },
+          "CD": {
+            "reference_positive": 113,
+            "kappa": 0.46358120111667406
+          },
+          "HYP": {
+            "reference_positive": 52,
+            "kappa": 0.4013931214627771
+          }
+        }
+      },
+      "glm-5.3-flash": {
+        "n": 1000,
+        "exact_set_agreement": 0.382,
+        "micro_precision": 0.9492063492063492,
+        "micro_recall": 0.3296582138919515,
+        "micro_f1": 0.48936170212765956,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 343,
+            "kappa": 0.16350533230380154
+          },
+          "MI": {
+            "reference_positive": 170,
+            "kappa": 0.6338273757628599
+          },
+          "STTC": {
+            "reference_positive": 195,
+            "kappa": 0.504070752572633
+          },
+          "CD": {
+            "reference_positive": 141,
+            "kappa": 0.5989929138494653
+          },
+          "HYP": {
+            "reference_positive": 58,
+            "kappa": 0.4698040799838423
+          }
+        }
+      }
+    }
+  },
+  "by_source_on_consensus": {
+    "gpt_heldout": {
+      "consensus_n": 278,
+      "label_aware_rule": {
+        "n": 278,
+        "exact_set_agreement": 0.9784172661870504,
+        "micro_precision": 0.9818181818181818,
+        "micro_recall": 0.996309963099631,
+        "micro_f1": 0.9890109890109892,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 107,
+            "kappa": 0.9923898165891049
+          },
+          "MI": {
+            "reference_positive": 44,
+            "kappa": 0.9605897363198184
+          },
+          "STTC": {
+            "reference_positive": 55,
+            "kappa": 1.0
+          },
+          "CD": {
+            "reference_positive": 45,
+            "kappa": 1.0
+          },
+          "HYP": {
+            "reference_positive": 20,
+            "kappa": 0.9484994442386072
+          }
+        }
+      },
+      "frozen_cue_list": {
+        "n": 278,
+        "exact_set_agreement": 0.42805755395683454,
+        "micro_precision": 0.9912280701754386,
+        "micro_recall": 0.41697416974169743,
+        "micro_f1": 0.587012987012987,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 107,
+            "kappa": 0.12354679802955691
+          },
+          "MI": {
+            "reference_positive": 44,
+            "kappa": 0.8215279263856198
+          },
+          "STTC": {
+            "reference_positive": 55,
+            "kappa": 0.7220264736691745
+          },
+          "CD": {
+            "reference_positive": 45,
+            "kappa": 0.6366876559344186
+          },
+          "HYP": {
+            "reference_positive": 20,
+            "kappa": 0.7357414448669194
+          }
+        }
+      }
+    },
+    "gpt_constrained": {
+      "consensus_n": 95,
+      "label_aware_rule": {
+        "n": 95,
+        "exact_set_agreement": 0.8736842105263158,
+        "micro_precision": 0.9368421052631579,
+        "micro_recall": 0.9175257731958762,
+        "micro_f1": 0.9270833333333333,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 33,
+            "kappa": 0.9542168674698797
+          },
+          "MI": {
+            "reference_positive": 26,
+            "kappa": 0.9470457079152732
+          },
+          "STTC": {
+            "reference_positive": 15,
+            "kappa": 0.8779443254817988
+          },
+          "CD": {
+            "reference_positive": 19,
+            "kappa": 0.8175182481751823
+          },
+          "HYP": {
+            "reference_positive": 4,
+            "kappa": 0.7893569844789363
+          }
+        }
+      },
+      "frozen_cue_list": {
+        "n": 95,
+        "exact_set_agreement": 0.30526315789473685,
+        "micro_precision": 0.90625,
+        "micro_recall": 0.29896907216494845,
+        "micro_f1": 0.44961240310077516,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 33,
+            "kappa": 0.0
+          },
+          "MI": {
+            "reference_positive": 26,
+            "kappa": 0.41034482758620666
+          },
+          "STTC": {
+            "reference_positive": 15,
+            "kappa": 0.6580976863753214
+          },
+          "CD": {
+            "reference_positive": 19,
+            "kappa": 0.5901639344262295
+          },
+          "HYP": {
+            "reference_positive": 4,
+            "kappa": 0.6503067484662577
+          }
+        }
+      }
+    },
+    "qwen3_8b": {
+      "consensus_n": 140,
+      "label_aware_rule": {
+        "n": 140,
+        "exact_set_agreement": 0.8357142857142857,
+        "micro_precision": 0.8931297709923665,
+        "micro_recall": 0.9285714285714286,
+        "micro_f1": 0.9105058365758756,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 56,
+            "kappa": 1.0
+          },
+          "MI": {
+            "reference_positive": 25,
+            "kappa": 1.0
+          },
+          "STTC": {
+            "reference_positive": 30,
+            "kappa": 0.7857142857142858
+          },
+          "CD": {
+            "reference_positive": 7,
+            "kappa": 0.4800000000000001
+          },
+          "HYP": {
+            "reference_positive": 8,
+            "kappa": 0.9373881932021468
+          }
+        }
+      },
+      "frozen_cue_list": {
+        "n": 140,
+        "exact_set_agreement": 0.11428571428571428,
+        "micro_precision": 0.6,
+        "micro_recall": 0.047619047619047616,
+        "micro_f1": 0.08823529411764705,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 56,
+            "kappa": 0.021352313167259492
+          },
+          "MI": {
+            "reference_positive": 25,
+            "kappa": 0.291139240506329
+          },
+          "STTC": {
+            "reference_positive": 30,
+            "kappa": 0.0
+          },
+          "CD": {
+            "reference_positive": 7,
+            "kappa": -0.037735849056604216
+          },
+          "HYP": {
+            "reference_positive": 8,
+            "kappa": 0.0
+          }
+        }
+      }
+    },
+    "qwen3_14b": {
+      "consensus_n": 125,
+      "label_aware_rule": {
+        "n": 125,
+        "exact_set_agreement": 0.984,
+        "micro_precision": 0.9836065573770492,
+        "micro_recall": 1.0,
+        "micro_f1": 0.9917355371900827,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 44,
+            "kappa": 0.9825540823447313
+          },
+          "MI": {
+            "reference_positive": 26,
+            "kappa": 1.0
+          },
+          "STTC": {
+            "reference_positive": 29,
+            "kappa": 1.0
+          },
+          "CD": {
+            "reference_positive": 14,
+            "kappa": 1.0
+          },
+          "HYP": {
+            "reference_positive": 7,
+            "kappa": 0.9290981281905842
+          }
+        }
+      },
+      "frozen_cue_list": {
+        "n": 125,
+        "exact_set_agreement": 0.376,
+        "micro_precision": 0.9772727272727273,
+        "micro_recall": 0.35833333333333334,
+        "micro_f1": 0.524390243902439,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 44,
+            "kappa": 0.20709754843133854
+          },
+          "MI": {
+            "reference_positive": 26,
+            "kappa": 0.5758603974793989
+          },
+          "STTC": {
+            "reference_positive": 29,
+            "kappa": 0.5551601423487542
+          },
+          "CD": {
+            "reference_positive": 14,
+            "kappa": 0.7617232176896681
+          },
+          "HYP": {
+            "reference_positive": 7,
+            "kappa": 0.23935091277890458
+          }
+        }
+      }
+    },
+    "gemma3_12b": {
+      "consensus_n": 103,
+      "label_aware_rule": {
+        "n": 103,
+        "exact_set_agreement": 0.912621359223301,
+        "micro_precision": 0.912621359223301,
+        "micro_recall": 1.0,
+        "micro_f1": 0.9543147208121827,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 45,
+            "kappa": 0.9412435824301199
+          },
+          "MI": {
+            "reference_positive": 1,
+            "kappa": 1.0
+          },
+          "STTC": {
+            "reference_positive": 22,
+            "kappa": 0.9715705216671267
+          },
+          "CD": {
+            "reference_positive": 19,
+            "kappa": 1.0
+          },
+          "HYP": {
+            "reference_positive": 7,
+            "kappa": 0.7121296813862494
+          }
+        }
+      },
+      "frozen_cue_list": {
+        "n": 103,
+        "exact_set_agreement": 0.33980582524271846,
+        "micro_precision": 1.0,
+        "micro_recall": 0.2765957446808511,
+        "micro_f1": 0.43333333333333335,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 45,
+            "kappa": 0.2905447714464623
+          },
+          "MI": {
+            "reference_positive": 1,
+            "kappa": 0.0
+          },
+          "STTC": {
+            "reference_positive": 22,
+            "kappa": 0.4232922732362822
+          },
+          "CD": {
+            "reference_positive": 19,
+            "kappa": 0.4875621890547268
+          },
+          "HYP": {
+            "reference_positive": 7,
+            "kappa": 0.0
+          }
+        }
+      }
+    },
+    "medgemma_4b": {
+      "consensus_n": 121,
+      "label_aware_rule": {
+        "n": 121,
+        "exact_set_agreement": 0.6198347107438017,
+        "micro_precision": 0.625,
+        "micro_recall": 0.759493670886076,
+        "micro_f1": 0.6857142857142857,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 28,
+            "kappa": 0.8906560636182903
+          },
+          "MI": {
+            "reference_positive": 14,
+            "kappa": 0.8384512683578105
+          },
+          "STTC": {
+            "reference_positive": 22,
+            "kappa": 0.6544502617801047
+          },
+          "CD": {
+            "reference_positive": 9,
+            "kappa": 0.30105334692490626
+          },
+          "HYP": {
+            "reference_positive": 6,
+            "kappa": -0.06857142857142695
+          }
+        }
+      },
+      "frozen_cue_list": {
+        "n": 121,
+        "exact_set_agreement": 0.33884297520661155,
+        "micro_precision": 0.46153846153846156,
+        "micro_recall": 0.0759493670886076,
+        "micro_f1": 0.13043478260869568,
+        "per_class": {
+          "NORM": {
+            "reference_positive": 28,
+            "kappa": 0.2504713169943438
+          },
+          "MI": {
+            "reference_positive": 14,
+            "kappa": 9.595498998545991e-16
+          },
+          "STTC": {
+            "reference_positive": 22,
+            "kappa": -0.016064257028112282
+          },
+          "CD": {
+            "reference_positive": 9,
+            "kappa": 0.09476309226932624
+          },
+          "HYP": {
+            "reference_positive": 6,
+            "kappa": -0.02542372881356002
+          }
+        }
+      }
+    }
+  },
+  "label_aware_rule_disagreements_on_consensus": {
+    "counts": {
+      "rule_extra": 63,
+      "rule_missed": 27,
+      "both": 8
+    },
+    "examples": [
+      {
+        "sid": 4,
+        "source": "gpt_heldout",
+        "text": "The ECG shows a nearly equal probability of normal (49.3%) and myocardial infarction (45.7%).",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 72,
+        "source": "gpt_heldout",
+        "text": "The probability of myocardial infarction (MI) is 0.457, which is below the threshold for diagnosis.",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 80,
+        "source": "gpt_heldout",
+        "text": "Myocardial infarction (MI) probability is 0.255, below threshold for diagnosis.",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 126,
+        "source": "gpt_heldout",
+        "text": "Signs suggestive of hypertension.",
+        "label_field": "HYP",
+        "rule": [
+          "HYP"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 211,
+        "source": "gpt_heldout",
+        "text": "There is a lower probability of hypertension (HYP) at 0.19.",
+        "label_field": "HYP",
+        "rule": [
+          "HYP"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 298,
+        "source": "gpt_heldout",
+        "text": "The ECG is interpreted as normal sinus rhythm with no evidence of myocardial infarction or other abnormalities.",
+        "label_field": "NORM",
+        "rule": [],
+        "reference": [
+          "NORM"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 300,
+        "source": "gpt_constrained",
+        "text": "Hypertension is the most probable diagnosis based on ECG analysis with a probability of 0.588.",
+        "label_field": "HYP",
+        "rule": [
+          "HYP"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 305,
+        "source": "gpt_constrained",
+        "text": "The ECG shows evidence of myocardial infarction and conduction disturbance, consistent with the asserted labels MI and CD.",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [
+          "CD",
+          "MI"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 315,
+        "source": "gpt_constrained",
+        "text": "There is a borderline prolonged QT interval, but it does not meet the threshold for long QT syndrome.",
+        "label_field": "STTC",
+        "rule": [
+          "STTC"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 320,
+        "source": "gpt_constrained",
+        "text": "Findings suggest possible myocardial infarction (MI) and ST-T changes (STTC) with conduction disturbance (CD).",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [
+          "CD",
+          "MI",
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 343,
+        "source": "gpt_constrained",
+        "text": "The ECG shows evidence of myocardial infarction (MI) and conduction disturbance (CD).",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [
+          "CD",
+          "MI"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 346,
+        "source": "gpt_constrained",
+        "text": "The ECG shows evidence of myocardial infarction (MI) and conduction disturbance (CD).",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [
+          "CD",
+          "MI"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 366,
+        "source": "gpt_constrained",
+        "text": "ECG findings suggest possible myocardial infarction, ST-T changes, and conduction disturbance as indicated by the probabilities and asserted labels.",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [
+          "CD",
+          "MI",
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 374,
+        "source": "gpt_constrained",
+        "text": "Possible myocardial infarction (MI) due to probability of 0.386, but not definitive.",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 376,
+        "source": "gpt_constrained",
+        "text": "The ECG shows evidence of myocardial infarction (MI) and conduction disturbance (CD).",
+        "label_field": "MI",
+        "rule": [
+          "MI"
+        ],
+        "reference": [
+          "CD",
+          "MI"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 392,
+        "source": "gpt_constrained",
+        "text": "No evidence of myocardial infarction, ST-T changes, conduction defects, or hypertrophy are present based on the ECG and probabilities.",
+        "label_field": "NORM",
+        "rule": [
+          "NORM"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 394,
+        "source": "gpt_constrained",
+        "text": "Possible mild left ventricular hypertrophy suggested by R wave amplitudes in V5 (2.397 mV) and V6 (1.894 mV) but not definitive.",
+        "label_field": "HYP",
+        "rule": [
+          "HYP"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 398,
+        "source": "gpt_constrained",
+        "text": "No evidence of myocardial infarction, ST-T changes, or conduction defects",
+        "label_field": "NORM",
+        "rule": [
+          "NORM"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 414,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD)",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 432,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD)",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 435,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD)",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 440,
+        "source": "qwen3_8b",
+        "text": "ST-segment elevation in lead II",
+        "label_field": "st_elevation_ii",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 445,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD) is the most likely diagnosis.",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 447,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD)",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 448,
+        "source": "qwen3_8b",
+        "text": "ST-segment elevation in lead II",
+        "label_field": "st_elevation_ii",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 453,
+        "source": "qwen3_8b",
+        "text": "Hypertension",
+        "label_field": "HYP",
+        "rule": [
+          "HYP"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 459,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 466,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD) is the most likely diagnosis.",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 472,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD) is suspected.",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 475,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD)",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 480,
+        "source": "qwen3_8b",
+        "text": "ST-segment depression in lead II",
+        "label_field": "st_depression",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 491,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD) is the most likely diagnosis.",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 495,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD) is the most likely diagnosis.",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 510,
+        "source": "qwen3_8b",
+        "text": "ST-segment elevation in lead II",
+        "label_field": "st_elevation_ii",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 515,
+        "source": "qwen3_8b",
+        "text": "ST-segment elevation in lead II",
+        "label_field": "st_elevation_ii",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 519,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD) is suspected.",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 527,
+        "source": "qwen3_8b",
+        "text": "ST-segment elevation in lead II",
+        "label_field": "st_elevation_ii",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 534,
+        "source": "qwen3_8b",
+        "text": "ST-segment depression in lead II",
+        "label_field": "ST_depression",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      },
+      {
+        "sid": 535,
+        "source": "qwen3_8b",
+        "text": "Coronary artery disease (CAD)",
+        "label_field": "CD",
+        "rule": [
+          "CD"
+        ],
+        "reference": [],
+        "kind": "rule_extra"
+      },
+      {
+        "sid": 537,
+        "source": "qwen3_8b",
+        "text": "ST-segment depression in lead II",
+        "label_field": "st_depression",
+        "rule": [],
+        "reference": [
+          "STTC"
+        ],
+        "kind": "rule_missed"
+      }
+    ]
+  }
+}
