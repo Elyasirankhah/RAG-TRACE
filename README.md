@@ -15,7 +15,7 @@ Tracing measurement evidence and diagnostic completeness in AI-generated ECG rep
   <img src="assets/pipeline.jpg" alt="RAG-TRACE pipeline: PTB-XL sample, 47 criterion cards, keyword, TF-IDF, and BM25 retrieval, and the two output schemas" width="100%">
 </p>
 
-A language model drafts an electrocardiogram note, sometimes after reading retrieved criterion cards. A deterministic rule then withdraws an applied criterion when the card has no numeric check or the Marquette 12SL predicate is false. Diagnoses are not rewritten. Uni-G is scored afterward as a second measurement program. This repository measures whether a retrieved criterion can be checked. It does not estimate clinical safety.
+A language model drafts an electrocardiogram note, sometimes after reading retrieved criterion cards. A deterministic rule then withdraws an applied criterion when the card has no numeric check or the Marquette 12SL predicate is false. Diagnoses are not rewritten. Uni-G is scored afterward as a second measurement program. This repository measures whether a retrieved criterion can be checked. 
 
 
 ## Project
