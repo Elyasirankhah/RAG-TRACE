@@ -1,4 +1,4 @@
-# RAG-TRACE
+﻿# RAG-TRACE
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-1.24.3-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/)
@@ -20,7 +20,7 @@ A language model drafts an electrocardiogram note, sometimes after reading retri
 
 ## Project
 
-The held-out sample is one test-fold electrocardiogram per patient from PTB-XL 1.0.3 (seed 11): 1,083 human-validated patients. Measurements come from PTB-XL+ 1.0.1. The criteria library has 47 cards. Fourteen have a numeric check. Thirty-three do not. Retrieval uses asserted superclass words from a calibrator fit on folds 1–8 and calibrated on fold 9. Stored test labels are not in the query. Keyword overlap, TF–IDF, and Okapi BM25 each return three cards. BM25 is a ranking comparison on the saved queries. It does not write a new note.
+The held-out sample is one test-fold electrocardiogram per patient from PTB-XL 1.0.3 (seed 11): 1,083 human-validated patients. Measurements come from PTB-XL+ 1.0.1. The criteria library has 47 cards. Fourteen have a numeric check. Thirty-three do not. Retrieval uses asserted superclass words from a calibrator fit on folds 1â€“8 and calibrated on fold 9. Stored test labels are not in the query. Keyword overlap, TFâ€“IDF, and Okapi BM25 each return three cards. BM25 is a ranking comparison on the saved queries. It does not write a new note.
 
 Two diagnosis comparisons hold the instruction fixed.
 
@@ -50,14 +50,14 @@ The waveforms are not in this repository. They are the public PhysioNet releases
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python scripts/scripts/diagnosis_prf.py
-python scripts/scripts/matched_intervals.py
-python scripts/scripts/micro_f1_forest.py
-python scripts/scripts/offline_day.py
-python scripts/scripts/retention_paired.py
+python scripts/diagnosis_prf.py
+python scripts/matched_intervals.py
+python scripts/micro_f1_forest.py
+python scripts/offline_day.py
+python scripts/retention_paired.py
 ```
 
-`scripts/diagnosis_prf.py` reads `results/ptbxl_baseline/case_record.csv` and the 12SL feature table from PTB-XL+. Run `python scripts/scripts/download_ptbxl.py` once before the first score. Keep NumPy at 1.24.3.
+`scripts/diagnosis_prf.py` reads `results/ptbxl_baseline/case_record.csv` and the 12SL feature table from PTB-XL+. Run `python scripts/download_ptbxl.py` once before the first score. Keep NumPy at 1.24.3.
 
 ## Scripts
 
@@ -66,7 +66,7 @@ python scripts/scripts/retention_paired.py
 | `scripts/diagnosis_prf.py` | Precision, recall, F1, omissions, and false-diagnosis notes |
 | `scripts/matched_intervals.py` | Paired intervals for the different-schema comparison |
 | `scripts/micro_f1_forest.py` | Micro-F1 change and bootstrap interval for each model |
-| `scripts/offline_day.py` | Keyword, TF–IDF, and BM25 on the saved queries |
+| `scripts/offline_day.py` | Keyword, TFâ€“IDF, and BM25 on the saved queries |
 | `scripts/retention_paired.py` | Untestable cards, failed 12SL checks, and retained cards |
 | `scripts/hyp_read.py` | Hypertrophy counts on the two schema comparisons |
 | `scripts/score_qwen_independent.py` | Uni-G and statement scores for Qwen3-8B |
