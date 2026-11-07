@@ -33,6 +33,14 @@ On the identical-schema pair, unsupported criteria are 17.4% without cards and 3
 
 Keyword retrieval on the full library produced an untestable or rejected card in 46.8% of gpt-4.1-mini notes. Of 647 withdrawals, 639 had no numeric check. Requiring a retrieved identifier on the 14 checked cards lowered the release score to 3.0%.
 
+
+## Citation
+
+If you use RAG-TRACE, its code, or its evaluation framework in your research, please cite:
+
+Irankhah, E., Salehzehi, S., & Hosseini, P. (2026). *RAG-TRACE: Tracing Measurement Evidence and Diagnostic Completeness in AI-Generated ECG Reports*. arXiv:2611.01409. https://doi.org/10.48550/arXiv.2611.01409
+
+
 ## Data
 
 The notes and the score files are in this repository, under `results/ptbxl_baseline/`. Rescoring them does not call a model and does not need a key.
